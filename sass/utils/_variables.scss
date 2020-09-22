@@ -1,0 +1,45 @@
+/*Toolkit graphique principal
+==================================================*/
+$color_1: #ffc107;
+$color_4: lighten(#3e8e52, 10%); 
+$font_family_1: 'Montserrat', sans-serif;
+$background_color_1: #289169;
+
+$size: 45px;
+$fw_low: 100;
+
+
+/*Toolkit graphique menu note enchantée
+==================================================*/
+$font_family_2: 'Devonshire', sans-serif;
+$font_family_3: 'Kalam', sans-serif;
+$color_2: darken(#f8e2df, 70%);
+$background_color_2: #f8e2df;
+$note_background: linear-gradient(to top right, #fa4b4b, #fa5650, #fa6155, #fb6d59, #fb785e, #fb8363, #fb8e68, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+
+
+/*Toolkit graphique menu chic à la française
+==================================================*/
+$font_family_4: 'Redressed', sans-serif;
+$font_family_5: 'Abril FatFace', sans-serif;
+$color_3: darken($color_1, 30%);
+$background_color_3: #fce4;
+$chic_background: linear-gradient(to right, #c67412ff, #e6b376, #cc8a78, #c57d88, #ca7498, #ce6ba8, 
+#c367ad, #b863b2, #ad60b8, #a15cbd, #9658c2, #8b54c7);
+
+
+
+/*Toolkit graphique menu le délice des papilles
+==================================================*/
+$font_family_6: 'Alex Brush', sans-serif;
+$font_family_7: 'Caveat', sans-serif;
+$background_color_4: #f5f5f5;
+$papilles_background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
+
+
+
+/*Toolkit graphique menu la palette du goût
+==================================================*/
+$font_family_8: 'Kaushan Script', sans-serif;
+$background_color_5: #e6ebe4;
+$palette_background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);

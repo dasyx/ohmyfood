@@ -1,0 +1,78 @@
+.fr {
+    background-color: $background_color_3;
+    color: echantenote_color($color_3);
+}
+.francaise_main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include flex;
+    &__titre {
+        @include chic_titre_display;
+    }
+}
+.francaise-menu-appetit {
+    @include svg_section_repas;
+    font-size: 20px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        color: #c67412ff;
+    &:after {
+        @include underline;
+        background: #c67412ff;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #c67412ff;
+        }
+    }
+}
+.francaise-menu-plaisir {
+    @include svg_section_repas;
+    font-size: 20px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        color: #a56799ff;
+    &:after {
+        @include underline;
+        background: #a56799ff;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #a56799ff;
+        }
+    }
+}
+.francaise-menu-gourmand {
+    @include svg_section_repas;
+    font-size: 20px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        color: #8b54c7;
+    &:after {
+        @include underline;
+        background: #8b54c7;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #8b54c7;
+        }
+    }
+}
+.font2{
+    font-family: $font_family_5;
+}
+.gradient1 {
+    color: #c67412ff;
+}
+.gradient2 {
+    color: #a56799ff;
+}
+.gradient3 {
+    color: #8b54c7;
+}

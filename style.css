@@ -1,0 +1,814 @@
+@charset "UTF-8";
+/*Toolkit graphique principal
+==================================================*/
+/*Toolkit graphique menu note enchantée
+==================================================*/
+/*Toolkit graphique menu chic à la française
+==================================================*/
+/*Toolkit graphique menu le délice des papilles
+==================================================*/
+/*Toolkit graphique menu la palette du goût
+==================================================*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header__logo-colors {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.bandeau {
+  font-size: 28px;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.texte, .prix {
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header__logo-colors {
+  padding: 20px;
+  text-align: center;
+  flex: 1 auto;
+  color: #ffc107;
+  background: #289169;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0 auto;
+}
+
+.conteneur {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.main_contain {
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px #efefef solid;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+}
+
+.article_container_menu {
+  width: 90%;
+  padding-bottom: 60px;
+}
+
+.section_container_menu {
+  text-align: left;
+  padding-bottom: 1.5em;
+}
+
+.deco_bar {
+  padding: 1.5em 0 1em 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  padding-top: 15px;
+}
+.menu__texte {
+  margin-left: 80px;
+  flex: 1;
+}
+.menu__prix {
+  margin-right: 80px;
+}
+
+.menu_bas {
+  line-height: 30px;
+  margin-left: 80px;
+}
+
+/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+===================================================================*/
+.zoom-hover {
+  overflow: hidden;
+  position: relative;
+  margin: 60px;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+}
+
+.zoom-hover .zoom-hover__box {
+  max-width: 100%;
+  transition: all 0.8s;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.zoom-hover .zoom-hover__box:hover {
+  transform: scale(1.15);
+  transition: transform 0.25s;
+}
+
+/*================================================================*/
+.note {
+  background-color: #f8e2df;
+  font-family: "Devonshire", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px #efefef solid;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .note {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1500px) {
+  .note {
+    width: 460px;
+    height: 560px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 2160px) {
+  .note {
+    width: 620px;
+    height: 820px;
+  }
+}
+@media screen and (min-width: 2161px) {
+  .note {
+    width: 420px;
+    height: 520px;
+  }
+}
+.note__titre {
+  color: #5e1d14;
+  font-family: "Devonshire", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+}
+.note__menu {
+  color: #5e1d14;
+  font-family: "Kalam", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.cle {
+  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fa6155, #fb6d59, #fb785e, #fb8363, #fb8e68, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.chic {
+  background-color: #fce4;
+  font-family: "Redressed", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px #efefef solid;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .chic {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1500px) {
+  .chic {
+    width: 460px;
+    height: 560px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 2160px) {
+  .chic {
+    width: 620px;
+    height: 820px;
+  }
+}
+@media screen and (min-width: 2161px) {
+  .chic {
+    width: 420px;
+    height: 520px;
+  }
+}
+.chic__titre {
+  font-family: "Redressed", sans-serif;
+  background: linear-gradient(to right, #c67412ff, #e6b376, #cc8a78, #c57d88, #ca7498, #ce6ba8, #c367ad, #b863b2, #ad60b8, #a15cbd, #9658c2, #8b54c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+}
+.chic__menu {
+  margin-top: 20px;
+  color: #6d5200;
+  font-family: "Abril FatFace", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.papilles {
+  background-color: #f5f5f5;
+  font-family: "Alex Brush", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px #efefef solid;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .papilles {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1500px) {
+  .papilles {
+    width: 460px;
+    height: 560px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 2160px) {
+  .papilles {
+    width: 620px;
+    height: 820px;
+  }
+}
+@media screen and (min-width: 2161px) {
+  .papilles {
+    width: 420px;
+    height: 520px;
+  }
+}
+.papilles__titre {
+  background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+}
+.papilles__menu {
+  margin-top: 20px;
+  color: #6a8ec3;
+  font-family: "Caveat", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.palette {
+  font-family: "Kaushan Script", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1px #efefef solid;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 640px) {
+  .palette {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1500px) {
+  .palette {
+    width: 460px;
+    height: 560px;
+  }
+}
+@media screen and (min-width: 1501px) and (max-width: 2160px) {
+  .palette {
+    width: 620px;
+    height: 820px;
+  }
+}
+@media screen and (min-width: 2161px) {
+  .palette {
+    width: 420px;
+    height: 520px;
+  }
+}
+.palette__titre {
+  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+}
+.palette__menu {
+  margin-top: 20px;
+  color: #5fbb69;
+  font-family: "Caveat", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+==============================================================*/
+.next {
+  display: inline-flex;
+  align-items: center;
+  width: 30%;
+  height: 80px;
+  border-radius: 12px;
+  margin: auto;
+  margin-bottom: 150px;
+  padding-right: 10px;
+  color: #ffc107;
+  background: #289169;
+  font-family: "Montserrat", sans-serif;
+}
+.next__proche {
+  padding-left: 25px;
+  font-size: 30px;
+}
+.next__points {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.dot1 {
+  animation: dot_anime 1.2s ease-in-out infinite;
+  padding-right: 5px;
+}
+
+.dot2 {
+  animation: dot_anime 1.2s 0.2s ease-in-out infinite;
+  padding-right: 5px;
+}
+
+.dot3 {
+  animation: dot_anime 1.2s 0.4s ease-in-out infinite;
+  padding-right: 10px;
+}
+
+@keyframes dot_anime {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.4) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+.foot {
+  height: 80px;
+  width: 100%;
+  padding: 25px 0px 0px 0px;
+  position: fixed;
+  /*avec la position: fixed, le footer sera visible même au scrolling*/
+  left: 0;
+  bottom: 0;
+  color: #ffc107;
+  background: #289169;
+  font-family: "Montserrat", sans-serif;
+}
+.foot__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*ci-dessous le paramètrage du tremblement des éléments du footer*/
+}
+.foot__flex:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.foot__flex__gauche {
+  margin-left: 20px;
+}
+.foot__flex__droite {
+  margin-right: 20px;
+}
+
+.ench {
+  background-color: #f8e2df;
+  color: #5e1d14;
+}
+
+.enchantee {
+  font-family: "Devonshire", sans-serif;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+.enchantee__titre {
+  color: #5e1d14;
+  font-family: "Devonshire", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+/*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
+.h3-menu {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.h3-menu__titre {
+  position: relative;
+  color: #5e1d14;
+}
+.h3-menu__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #5e1d14;
+}
+.h3-menu__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #5e1d14;
+}
+
+/*FIN DE LA SECTION TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
+.font1 {
+  font-family: "Kalam", sans-serif;
+}
+
+.key {
+  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fa6155, #fb6d59, #fb785e, #fb8363, #fb8e68, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+}
+
+.note_bas {
+  display: flex;
+  padding-top: 50px;
+}
+.note_bas__cle {
+  margin-left: 220px;
+}
+.note_bas__titre {
+  margin-right: 220px;
+  color: #5e1d14;
+  font-family: "Devonshire", sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.fr {
+  background-color: #fce4;
+  color: #5e1d14;
+}
+
+.francaise_main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+.francaise_main__titre {
+  font-family: "Redressed", sans-serif;
+  background: linear-gradient(to right, #c67412ff, #e6b376, #cc8a78, #c57d88, #ca7498, #ce6ba8, #c367ad, #b863b2, #ad60b8, #a15cbd, #9658c2, #8b54c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+}
+
+.francaise-menu-appetit {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+.francaise-menu-appetit__titre {
+  position: relative;
+  color: #c67412ff;
+}
+.francaise-menu-appetit__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #c67412ff;
+}
+.francaise-menu-appetit__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #c67412ff;
+}
+
+.francaise-menu-plaisir {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+.francaise-menu-plaisir__titre {
+  position: relative;
+  color: #a56799ff;
+}
+.francaise-menu-plaisir__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #a56799ff;
+}
+.francaise-menu-plaisir__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #a56799ff;
+}
+
+.francaise-menu-gourmand {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+.francaise-menu-gourmand__titre {
+  position: relative;
+  color: #8b54c7;
+}
+.francaise-menu-gourmand__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #8b54c7;
+}
+.francaise-menu-gourmand__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #8b54c7;
+}
+
+.font2 {
+  font-family: "Abril FatFace", sans-serif;
+}
+
+.gradient1 {
+  color: #c67412ff;
+}
+
+.gradient2 {
+  color: #a56799ff;
+}
+
+.gradient3 {
+  color: #8b54c7;
+}
+
+.gout {
+  background-color: #e6ebe4;
+}
+
+.palette_main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+.palette_main__titre {
+  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+  font-size: 4em;
+  font-family: "Kaushan Script", sans-serif;
+}
+
+.palette-menu__titre {
+  position: relative;
+  padding: 20px;
+  font-weight: 100;
+}
+.palette-menu__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #51b04a;
+}
+.palette-menu__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #51b04a;
+}
+
+.font4 {
+  font-family: "Caveat", sans-serif;
+  font-size: 20px;
+}
+
+.large {
+  font-size: 25px;
+}
+
+.pap {
+  background-color: #f5f5f5;
+}
+
+.papilles_main {
+  font-family: "Alex Brush", sans-serif;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+.papilles_main__titre {
+  background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-align: center;
+  font-size: 4em;
+}
+
+.papilles-menu-commencer {
+  font-size: 25px;
+  font-weight: 100;
+}
+.papilles-menu-commencer__titre {
+  position: relative;
+  padding: 20px;
+}
+.papilles-menu-commencer__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #3f49b5;
+}
+.papilles-menu-commencer__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3f49b5;
+}
+
+.papilles-menu-continuer {
+  font-size: 25px;
+  font-weight: 100;
+}
+.papilles-menu-continuer__titre {
+  position: relative;
+  padding: 20px;
+}
+.papilles-menu-continuer__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #4c77a8;
+}
+.papilles-menu-continuer__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #4c77a8;
+}
+
+.papilles-menu-terminer {
+  font-size: 25px;
+  font-weight: 100;
+}
+.papilles-menu-terminer__titre {
+  position: relative;
+  padding: 20px;
+}
+.papilles-menu-terminer__titre:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  background: #86a6d1;
+}
+.papilles-menu-terminer__titre:hover:after {
+  width: 100%;
+  left: 0;
+  background: #86a6d1;
+}
+
+.font3 {
+  font-family: "Caveat", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

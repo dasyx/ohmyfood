@@ -1,0 +1,82 @@
+/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+===================================================================*/
+.zoom-hover {
+    overflow: hidden;
+    position: relative;
+    margin: 60px;
+    box-shadow: 4px 0px 8px 5px #cdcdcd80;
+}
+.zoom-hover .zoom-hover__box {
+    max-width: 100%;
+    transition: all 0.8s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.zoom-hover .zoom-hover__box:hover {
+    transform: scale(1.15);
+    transition:transform 0.25s;
+}
+/*================================================================*/
+
+.note {
+    background-color: $background_color_2;
+    font-family: $font_family_2;
+    text-align: center;
+    @include cartes;
+    &__titre {
+        @include note_titre_display;
+    }
+    &__menu {
+        @include note_menu_display;
+    }
+}
+.cle {
+    @include note_cle_display; 
+}
+
+.chic {
+    background-color: $background_color_3;
+    font-family: $font_family_4;
+    @include cartes;
+    &__titre {
+        @include chic_titre_display;
+    }
+    &__menu {
+        @include menu_chic_display;
+    }
+}
+
+.papilles {
+    background-color: $background_color_4;
+    font-family: $font_family_6; 
+    @include cartes;
+    &__titre {
+        @include papilles_titre_display;
+    }
+    &__menu {
+        @include menu_papilles_display;
+    }
+}
+
+.palette {
+    $background_color: $background_color_5;
+    font-family: $font_family_8;
+    @include cartes;
+    &__titre {
+        @include palette_titre_display;
+    }
+    &__menu {
+        margin-top: 20px;
+        color: #5fbb69;
+        font-family: $font_family_7;
+        font-size: $size;
+        font-weight: $fw_low;
+        text-align: center;
+    }
+}
+a:link {
+    text-decoration: none;
+}
+
+

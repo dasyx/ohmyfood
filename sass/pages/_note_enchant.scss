@@ -1,0 +1,60 @@
+
+.ench {
+    background-color: $background_color_2;
+    color: echantenote_color($color_2);
+}
+.enchantee {
+    font-family: $font_family_2;
+    padding-top: 30px;
+    @include flex;
+    &__titre {
+        @include note_titre_display;
+    }
+}
+
+/*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
+
+.h3-menu {
+    @include svg_section_repas;
+    &__titre {
+        position: relative;
+        color: $color_2;
+    &:after {
+        @include underline;
+        background: $color_2;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: $color_2;
+        }
+    }
+}
+
+/*FIN DE LA SECTION TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
+
+.font1{
+    font-family: $font_family_3;
+}
+.key {
+    background: $note_background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+}
+.note_bas {
+    display: flex;
+    padding-top: 50px;
+    &__cle {
+        margin-left: 220px;
+    }
+    &__titre {
+        margin-right: 220px;
+        color: echantenote_color($color_2);
+        font-family: $font_family_2;
+        font-size: 35px;
+        font-weight: 200;
+    }
+}

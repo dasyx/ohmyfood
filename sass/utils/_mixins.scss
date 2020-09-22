@@ -1,0 +1,121 @@
+@mixin logo-colors {
+    color: $color_1;
+    background: $background_color_1;
+    font-family: $font_family_1;
+}
+@mixin margin_menu {
+    margin: 65px;
+}
+@mixin cartes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px #efefef solid;
+    box-shadow: 4px 0px 8px 5px #cdcdcd80;
+    margin-bottom: 60px;
+
+   @media screen and (max-width: 640px) {
+        width: 380px;
+        height: 420px;
+    }
+    @media screen and (min-width: 641px) and (max-width: 1500px) {
+        width: 460px;
+        height: 560px;
+    }
+
+    @media screen and (min-width: 1501px) and (max-width: 2160px) {
+        width: 620px;
+        height: 820px;
+    }
+    @media screen and (min-width: 2161px) {
+        width: 420px;
+        height: 520px;
+    }
+}
+
+@mixin note_titre_display {
+    color: echantenote_color($color_2);
+    font-family: $font_family_2;
+    font-size: $size;
+    font-weight: 100;
+}
+@mixin note_cle_display {
+    background: $note_background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+@mixin note_menu_display {
+    color: echantenote_color($color_2);
+    font-family: $font_family_3;
+    font-size: 50px;
+    text-align: center;
+}
+@mixin chic_titre_display {
+    font-family: $font_family_4;
+    background: $chic_background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    text-align: center;
+}
+@mixin menu_chic_display {
+    margin-top: 20px;
+    color: menuchic_color($color_3);
+    font-family: $font_family_5;
+    font-size: $size;
+    font-weight: $fw_low;
+    letter-spacing: .1em;
+    text-align: center;
+}
+@mixin papilles_titre_display {
+    background: $papilles_background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    text-align: center;
+}
+@mixin menu_papilles_display {
+    margin-top: 20px;
+    color: #6a8ec3;
+    font-family: $font_family_7;
+    font-size: $size;
+    font-weight: $fw_low;
+    text-align: center;
+}
+@mixin palette_titre_display {
+    background: $palette_background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    text-align: center;
+}
+@mixin menu_palette_display {
+    margin-top: 20px;
+    color: menupalette_color($color_4);
+    font-family: $font_family_8;
+    font-size: $size;
+    font-weight: $fw_low;
+    text-align: center;
+}
+
+@mixin flex {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+@mixin svg_section_repas {
+    padding-bottom: 20px;
+    text-align: center;
+}
+@mixin underline {
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    right: 0;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}

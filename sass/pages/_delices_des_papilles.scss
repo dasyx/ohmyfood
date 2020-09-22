@@ -1,0 +1,67 @@
+.pap {
+    background-color: $background_color_4;
+}
+.papilles_main {
+    font-family: $font_family_6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include flex;
+    &__titre {
+        @include papilles_titre_display;
+        font-size: 4em;
+    }
+}
+.papilles-menu-commencer {
+    font-size: 25px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        padding: 20px;
+    &:after {
+        @include underline;
+        background: #3f49b5;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #3f49b5;
+        }
+    }
+}
+.papilles-menu-continuer {
+    font-size: 25px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        padding: 20px;
+    &:after {
+        @include underline;
+        background: #4c77a8;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #4c77a8;
+        }
+    }
+}
+.papilles-menu-terminer {
+    font-size: 25px;
+    font-weight: 100;
+    &__titre {
+        position: relative;
+        padding: 20px;
+    &:after {
+        @include underline;
+        background: #86a6d1;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #86a6d1;
+        }
+    }
+}
+.font3 {
+    font-family: $font_family_7;
+}

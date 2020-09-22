@@ -1,0 +1,49 @@
+/*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+==============================================================*/
+
+.next {
+	display: inline-flex;
+    align-items: center;
+	width: 30%;
+	height: 80px;
+	border-radius: 12px;
+	margin:auto;
+	margin-bottom: 150px;
+	padding-right: 10px;
+	@include logo-colors;
+	&__proche {
+		padding-left: 25px;
+		font-size: 30px;
+	}
+	&__points {
+		padding-top: 10px;
+		font-size: 15px;
+	}
+}
+.dot1{
+	animation: dot_anime 1.2s ease-in-out infinite; 
+	padding-right: 5px;
+}
+.dot2{
+	animation: dot_anime 1.2s 0.2s ease-in-out infinite;
+	padding-right: 5px;
+}
+.dot3{
+	animation: dot_anime 1.2s 0.4s ease-in-out infinite;
+	padding-right: 10px;
+}
+
+@keyframes dot_anime {
+    0%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: scale(1.4) translateY(-4px);
+    }
+    100%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+}

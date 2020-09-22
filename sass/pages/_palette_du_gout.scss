@@ -1,0 +1,36 @@
+.gout {
+    background-color: $background_color_5;
+}
+.palette_main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include flex;
+    &__titre {
+        @include palette_titre_display;
+        font-size: 4em;
+        font-family: $font_family_8;
+    }
+}
+.palette-menu {
+    &__titre {
+        position: relative;
+        padding: 20px;
+        font-weight: 100;
+    &:after {
+        @include underline;
+        background: #51b04a;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: #51b04a;
+        }
+    }
+}
+.font4 {
+    font-family: $font_family_7;
+    font-size: 20px;
+}
+.large {
+    font-size: 25px;
+}
