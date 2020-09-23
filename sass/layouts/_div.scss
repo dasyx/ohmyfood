@@ -4,24 +4,29 @@
 .next {
 	display: flex;
     align-items: center;
-	width: 500px;
+	width: 850px;
 	height: 80px;
 	border-radius: 12px;
 	margin:auto;
+	margin-top: 250px;
 	margin-bottom: 150px;
 	padding-right: 10px;
 	@include logo-colors;
 	&__proche {
 		padding-left: 25px;
-		font-size: 30px;
+		font-size: 40px;
 	}
 	&__points {
 		padding-top: 10px;
 		font-size: 15px;
 	}
-	@media screen and (max-width: 320px) {
-		font-size: 15px;
-	}
+	@media screen and (min-width: 320px) and (max-width: 479px) {
+		.next {
+			&__proche {
+				font-size: 20px;
+			}
+		}
+	}	
 }
 .dot1{
 	animation: dot_anime 1.2s ease-in-out infinite; 

@@ -156,16 +156,22 @@ footer {
     height: 580px;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .note {
-    width: 520px;
-    height: 580px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .note {
-    width: 520px;
-    height: 580px;
+    width: 740px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .note {
+    width: 480px;
+    height: 540px;
   }
 }
 .note__titre {
@@ -211,16 +217,22 @@ footer {
     height: 580px;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .chic {
-    width: 520px;
-    height: 580px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .chic {
-    width: 520px;
-    height: 580px;
+    width: 740px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .chic {
+    width: 480px;
+    height: 540px;
   }
 }
 .chic__titre {
@@ -264,16 +276,22 @@ footer {
     height: 580px;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .papilles {
-    width: 520px;
-    height: 580px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .papilles {
-    width: 520px;
-    height: 580px;
+    width: 740px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .papilles {
+    width: 480px;
+    height: 540px;
   }
 }
 .papilles__titre {
@@ -314,16 +332,22 @@ footer {
     height: 580px;
   }
 }
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .palette {
-    width: 520px;
-    height: 580px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .palette {
-    width: 520px;
-    height: 580px;
+    width: 740px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 2561px) {
+  .palette {
+    width: 480px;
+    height: 540px;
   }
 }
 .palette__titre {
@@ -351,10 +375,11 @@ a:link {
 .next {
   display: flex;
   align-items: center;
-  width: 500px;
+  width: 850px;
   height: 80px;
   border-radius: 12px;
   margin: auto;
+  margin-top: 250px;
   margin-bottom: 150px;
   padding-right: 10px;
   color: #ffc107;
@@ -363,15 +388,15 @@ a:link {
 }
 .next__proche {
   padding-left: 25px;
-  font-size: 30px;
+  font-size: 40px;
 }
 .next__points {
   padding-top: 10px;
   font-size: 15px;
 }
-@media screen and (max-width: 320px) {
-  .next {
-    font-size: 15px;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .next .next__proche {
+    font-size: 20px;
   }
 }
 
