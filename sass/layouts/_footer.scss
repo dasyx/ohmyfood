@@ -34,10 +34,10 @@
             }
             &__droite {
                 margin-right: 20px;
-        }
+            }
     }
 }
-a {
+.foot__flex__gauche a, .foot__flex__droite a {
     text-decoration: none;
     color: $color_1;
 }

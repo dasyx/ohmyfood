@@ -2,9 +2,9 @@
 ==============================================================*/
 
 .next {
-	display: inline-flex;
+	display: flex;
     align-items: center;
-	width: 30%;
+	width: 500px;
 	height: 80px;
 	border-radius: 12px;
 	margin:auto;
@@ -17,6 +17,9 @@
 	}
 	&__points {
 		padding-top: 10px;
+		font-size: 15px;
+	}
+	@media screen and (max-width: 320px) {
 		font-size: 15px;
 	}
 }

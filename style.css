@@ -144,28 +144,28 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 640px) {
-  .note {
-    width: 380px;
-    height: 420px;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 1500px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .note {
     width: 460px;
-    height: 560px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1501px) and (max-width: 2160px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .note {
-    width: 620px;
-    height: 820px;
+    width: 520px;
+    height: 580px;
   }
 }
-@media screen and (min-width: 2161px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
   .note {
-    width: 420px;
-    height: 520px;
+    width: 520px;
+    height: 580px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .note {
+    width: 520px;
+    height: 580px;
   }
 }
 .note__titre {
@@ -199,28 +199,28 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 640px) {
-  .chic {
-    width: 380px;
-    height: 420px;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 1500px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .chic {
     width: 460px;
-    height: 560px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1501px) and (max-width: 2160px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .chic {
-    width: 620px;
-    height: 820px;
+    width: 520px;
+    height: 580px;
   }
 }
-@media screen and (min-width: 2161px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
   .chic {
-    width: 420px;
-    height: 520px;
+    width: 520px;
+    height: 580px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .chic {
+    width: 520px;
+    height: 580px;
   }
 }
 .chic__titre {
@@ -252,28 +252,28 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 640px) {
-  .papilles {
-    width: 380px;
-    height: 420px;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 1500px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .papilles {
     width: 460px;
-    height: 560px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1501px) and (max-width: 2160px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .papilles {
-    width: 620px;
-    height: 820px;
+    width: 520px;
+    height: 580px;
   }
 }
-@media screen and (min-width: 2161px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
   .papilles {
-    width: 420px;
-    height: 520px;
+    width: 520px;
+    height: 580px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .papilles {
+    width: 520px;
+    height: 580px;
   }
 }
 .papilles__titre {
@@ -302,28 +302,28 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (max-width: 640px) {
-  .palette {
-    width: 380px;
-    height: 420px;
-  }
-}
-@media screen and (min-width: 641px) and (max-width: 1500px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .palette {
     width: 460px;
-    height: 560px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 1501px) and (max-width: 2160px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .palette {
-    width: 620px;
-    height: 820px;
+    width: 520px;
+    height: 580px;
   }
 }
-@media screen and (min-width: 2161px) {
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
   .palette {
-    width: 420px;
-    height: 520px;
+    width: 520px;
+    height: 580px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .palette {
+    width: 520px;
+    height: 580px;
   }
 }
 .palette__titre {
@@ -349,9 +349,9 @@ a:link {
 /*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
 ==============================================================*/
 .next {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  width: 30%;
+  width: 500px;
   height: 80px;
   border-radius: 12px;
   margin: auto;
@@ -368,6 +368,11 @@ a:link {
 .next__points {
   padding-top: 10px;
   font-size: 15px;
+}
+@media screen and (max-width: 320px) {
+  .next {
+    font-size: 15px;
+  }
 }
 
 .dot1 {
@@ -461,6 +466,11 @@ a:link {
 }
 .foot__flex__droite {
   margin-right: 20px;
+}
+
+.foot__flex__gauche a, .foot__flex__droite a {
+  text-decoration: none;
+  color: #ffc107;
 }
 
 .ench {
