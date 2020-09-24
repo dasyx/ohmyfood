@@ -399,6 +399,11 @@ a:link {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 1439px) {
+  .next .next__proche {
+    font-size: 30px;
+  }
+}
 
 .dot1 {
   animation: dot_anime 1.2s ease-in-out infinite;
