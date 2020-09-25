@@ -144,25 +144,25 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .note {
-    width: 480px;
-    height: 540px;
+    width: 460px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .note {
-    width: 520px;
-    height: 540px;
+    width: 400px;
+    height: 460px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .note {
-    width: 370px;
-    height: 410px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .note {
     width: 740px;
     height: 800px;
@@ -205,25 +205,25 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .chic {
-    width: 480px;
-    height: 540px;
+    width: 460px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .chic {
-    width: 520px;
-    height: 540px;
+    width: 400px;
+    height: 460px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .chic {
-    width: 370px;
-    height: 410px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .chic {
     width: 740px;
     height: 800px;
@@ -264,25 +264,25 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .papilles {
-    width: 480px;
-    height: 540px;
+    width: 460px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .papilles {
-    width: 520px;
-    height: 540px;
+    width: 400px;
+    height: 460px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .papilles {
-    width: 370px;
-    height: 410px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .papilles {
     width: 740px;
     height: 800px;
@@ -320,25 +320,25 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .palette {
-    width: 480px;
-    height: 540px;
+    width: 460px;
+    height: 400px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1439px) {
   .palette {
-    width: 520px;
-    height: 540px;
+    width: 400px;
+    height: 460px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .palette {
-    width: 370px;
-    height: 410px;
+    width: 580px;
+    height: 620px;
   }
 }
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
   .palette {
     width: 740px;
     height: 800px;

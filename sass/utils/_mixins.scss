@@ -15,27 +15,27 @@
     box-shadow: 4px 0px 8px 5px #cdcdcd80;
     margin-bottom: 60px;
 
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-       width: 480px;
-       height: 540px;
-   }
-   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    width: 520px;
-    height: 540px;
-   } 
-   @media screen and (min-width: 1025px) and (max-width: 1440px) {
-       width: 370px;
-       height: 410px;
-   }
-   @media screen and (min-width: 1441px) and (max-width: 2560px){
-       width: 740px;
-       height: 800px;
-   }
-   @media screen and (min-width: 2561px){
-       width: 480px;
-       height: 540px;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        width: 460px;
+        height: 400px;
     }
-}
+     @media screen and (min-width: 480px) and (max-width: 1439px) {
+        width: 400px;
+        height: 460px;
+    } 
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        width: 580px;
+        height: 620px;
+    }
+    @media screen and (min-width: 1921px) and (max-width: 2560px){
+        width: 740px;
+        height: 800px;
+    }
+    @media screen and (min-width: 2561px){
+        width: 480px;
+        height: 540px;
+     }
+ }
 
 @mixin note_titre_display {
     color: echantenote_color($color_2);
