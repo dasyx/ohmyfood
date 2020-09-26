@@ -82,9 +82,29 @@ a:link {
 /*MEDIA QUERIES
 ==============================================================================*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     .barre {
         display: none;
+    }
+    .menu {
+        display: block;
+        &__texte {
+            margin-left: auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        &__prix {
+            margin-left: 60px;
+            text-align: center;
+        }
+    }
+    .menu_bas {
+        margin-left: auto;
+        text-align: center;
+    }
+    #small {
+            font-size: 30px;
+            padding-bottom: 10px;
     }
 }
 

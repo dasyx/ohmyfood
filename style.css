@@ -109,6 +109,10 @@ footer {
   margin-left: 80px;
 }
 
+.space {
+  padding-top: 15px;
+}
+
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
 ===================================================================*/
 .zoom-hover {
@@ -144,13 +148,19 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .note {
-    width: 460px;
-    height: 400px;
+    width: 400px;
+    height: 420px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1439px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .note {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .note {
     width: 400px;
     height: 460px;
@@ -205,13 +215,19 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .chic {
-    width: 460px;
-    height: 400px;
+    width: 400px;
+    height: 420px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1439px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .chic {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .chic {
     width: 400px;
     height: 460px;
@@ -264,13 +280,19 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .papilles {
-    width: 460px;
-    height: 400px;
+    width: 400px;
+    height: 420px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1439px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .papilles {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .papilles {
     width: 400px;
     height: 460px;
@@ -320,13 +342,19 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .palette {
-    width: 460px;
-    height: 400px;
+    width: 400px;
+    height: 420px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1439px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .palette {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .palette {
     width: 400px;
     height: 460px;
@@ -372,9 +400,32 @@ a:link {
 
 /*MEDIA QUERIES
 ==============================================================================*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .barre {
     display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menu__texte {
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .menu__prix {
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .menu_bas {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  #small {
+    font-size: 30px;
+    padding-bottom: 10px;
   }
 }
 /*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
@@ -401,12 +452,12 @@ a:link {
   padding-top: 10px;
   font-size: 15px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .next .next__proche {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1439px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .next .next__proche {
     font-size: 30px;
   }
