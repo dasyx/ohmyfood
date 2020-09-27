@@ -16,7 +16,6 @@
 =============================================================================*/
 
 .h3-menu {
-    @include svg_section_repas;
     &__titre {
         position: relative;
         color: $color_2;

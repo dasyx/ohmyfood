@@ -77,7 +77,6 @@ footer {
 }
 
 .section_container_menu {
-  text-align: left;
   padding-bottom: 1.5em;
 }
 
@@ -407,6 +406,21 @@ a:link {
     margin-right: auto;
   }
 
+  .francaise-menu-appetit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .francaise-menu-plaisir {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .francaise-menu-gourmand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .menu {
     display: block;
   }
@@ -585,10 +599,6 @@ a:link {
 
 /*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
 =============================================================================*/
-.h3-menu {
-  padding-bottom: 20px;
-  text-align: center;
-}
 .h3-menu__titre {
   position: relative;
   color: #5e1d14;
@@ -663,8 +673,6 @@ a:link {
 }
 
 .francaise-menu-appetit {
-  padding-bottom: 20px;
-  text-align: center;
   font-size: 20px;
   font-weight: 100;
 }
@@ -690,8 +698,6 @@ a:link {
 }
 
 .francaise-menu-plaisir {
-  padding-bottom: 20px;
-  text-align: center;
   font-size: 20px;
   font-weight: 100;
 }
@@ -717,8 +723,6 @@ a:link {
 }
 
 .francaise-menu-gourmand {
-  padding-bottom: 20px;
-  text-align: center;
   font-size: 20px;
   font-weight: 100;
 }

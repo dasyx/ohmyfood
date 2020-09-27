@@ -87,8 +87,16 @@ a:link {
         display: none;
     }
     .h3-menu {
-        margin-left: auto;
-        margin-right: auto;
+        @include margin_auto;
+    }
+    .francaise-menu-appetit {
+        @include margin_auto;
+    }
+    .francaise-menu-plaisir {
+        @include margin_auto;
+    }
+    .francaise-menu-gourmand {
+        @include margin_auto;
     }
     .menu {
         display: block;
