@@ -7,16 +7,16 @@
 	width: 850px;
 	height: 80px;
 	border-radius: 12px;
-	margin:auto;
-	margin-top: 250px;
-	margin-bottom: 150px;
-	padding-right: 10px;
+	margin-top: 100px;
+	margin-bottom: 200px;
 	@include logo-colors;
 	&__proche {
-		padding-left: 25px;
+		@include auto_center;
+		padding-left: 30px;
 		font-size: 40px;
 	}
 	&__points {
+		@include auto_center;
 		padding-top: 10px;
 		font-size: 15px;
 	}

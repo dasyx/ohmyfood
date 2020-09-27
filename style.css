@@ -37,6 +37,8 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100%;
+  line-height: 100px;
+  margin-top: -50px;
 }
 .header__logo-colors {
   padding: 20px;
@@ -401,24 +403,55 @@ a:link {
     display: none;
   }
 
-  .h3-menu {
+  .note-menu {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+  .note-menu__titre {
+    text-decoration: underline;
   }
 
   .francaise-menu-appetit {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .francaise-menu-plaisir {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .francaise-menu-gourmand {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+
+  .papilles-menu-commencer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .papilles-menu-continuer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .papilles-menu-terminer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .palette-menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .menu {
@@ -440,9 +473,14 @@ a:link {
   }
 
   #small {
-    font-size: 30px;
+    font-size: 28px;
     padding-bottom: 10px;
   }
+
+  /*.heading-papilles {
+      font-size: 20px;
+      text-decoration: underline;
+  }*/
 }
 /*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
 ==============================================================*/
@@ -452,19 +490,23 @@ a:link {
   width: 850px;
   height: 80px;
   border-radius: 12px;
-  margin: auto;
-  margin-top: 250px;
-  margin-bottom: 150px;
-  padding-right: 10px;
+  margin-top: 100px;
+  margin-bottom: 200px;
   color: #ffc107;
   background: #289169;
   font-family: "Montserrat", sans-serif;
 }
 .next__proche {
-  padding-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 30px;
   font-size: 40px;
 }
 .next__points {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -509,7 +551,7 @@ a:link {
   }
 }
 .foot {
-  height: 80px;
+  height: 120px;
   width: 100%;
   padding: 25px 0px 0px 0px;
   position: fixed;
@@ -599,11 +641,11 @@ a:link {
 
 /*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
 =============================================================================*/
-.h3-menu__titre {
+.note-menu__titre {
   position: relative;
   color: #5e1d14;
 }
-.h3-menu__titre:after {
+.note-menu__titre:after {
   content: "";
   position: absolute;
   width: 0;
@@ -614,7 +656,7 @@ a:link {
   -webkit-transition: width 0.2s ease;
   background: #5e1d14;
 }
-.h3-menu__titre:hover:after {
+.note-menu__titre:hover:after {
   width: 100%;
   left: 0;
   background: #5e1d14;
@@ -840,7 +882,7 @@ a:link {
 }
 .papilles-menu-commencer__titre {
   position: relative;
-  padding: 20px;
+  padding: 30px;
 }
 .papilles-menu-commencer__titre:after {
   content: "";
@@ -865,7 +907,7 @@ a:link {
 }
 .papilles-menu-continuer__titre {
   position: relative;
-  padding: 20px;
+  padding: 30px;
 }
 .papilles-menu-continuer__titre:after {
   content: "";
@@ -890,7 +932,7 @@ a:link {
 }
 .papilles-menu-terminer__titre {
   position: relative;
-  padding: 20px;
+  padding: 30px;
 }
 .papilles-menu-terminer__titre:after {
   content: "";
