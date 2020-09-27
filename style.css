@@ -10,7 +10,7 @@
 /*Toolkit graphique menu la palette du goût
 ==================================================*/
 * {
-  margin: 0px;
+  /*margin: auto;*/
   padding: 0px;
   box-sizing: border-box;
 }
@@ -47,10 +47,6 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-* {
-  margin: 0 auto;
-}
-
 .conteneur {
   display: flex;
   flex-flow: row wrap;
@@ -62,6 +58,8 @@ footer {
 
 .main_contain {
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 100px;
   margin-bottom: 200px;
   display: flex;
@@ -89,7 +87,6 @@ footer {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  text-align: center;
 }
 
 .menu {
@@ -405,6 +402,11 @@ a:link {
     display: none;
   }
 
+  .h3-menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .menu {
     display: block;
   }
@@ -626,10 +628,12 @@ a:link {
   padding-top: 50px;
 }
 .note_bas__cle {
-  margin-left: 220px;
+  margin-left: auto;
+  padding-top: 45px;
+  padding-right: 20px;
 }
 .note_bas__titre {
-  margin-right: 220px;
+  margin-right: auto;
   color: #5e1d14;
   font-family: "Devonshire", sans-serif;
   font-size: 35px;
