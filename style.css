@@ -9,9 +9,10 @@
 ==================================================*/
 /*Toolkit graphique menu la palette du goût
 ==================================================*/
+/*ci-dessous le paramètrage du tremblement des éléments du footer*/
 * {
-  /*margin: auto;*/
-  padding: 0px;
+  /*margin: 0 auto;*/
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -34,16 +35,12 @@ footer {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  margin: -50px -10px 50px -20px;
   line-height: 100px;
-  margin-top: -50px;
 }
 .header__logo-colors {
   padding: 20px;
   text-align: center;
-  flex: 1 auto;
   color: #ffc107;
   background: #289169;
   font-family: "Montserrat", sans-serif;
@@ -59,52 +56,45 @@ footer {
 }
 
 .main_contain {
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
   margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
 .article_container_menu {
-  width: 90%;
   padding-bottom: 60px;
 }
 
 .section_container_menu {
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 .deco_bar {
-  padding: 1.5em 0 1em 0;
   display: flex;
+  padding: 1.5em 0 1.5em 0;
   justify-content: space-between;
-  flex-wrap: nowrap;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .menu__texte {
-  margin-left: 80px;
+  margin-left: 50px;
   flex: 1;
 }
 .menu__prix {
-  margin-right: 80px;
+  margin-right: 50px;
 }
 
 .menu_bas {
-  line-height: 30px;
-  margin-left: 80px;
+  line-height: 13px;
+  margin-left: 50px;
 }
 
 .space {
@@ -406,7 +396,6 @@ a:link {
   .note-menu {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
   .note-menu__titre {
     text-decoration: underline;
@@ -415,43 +404,36 @@ a:link {
   .francaise-menu-appetit {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .francaise-menu-plaisir {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .francaise-menu-gourmand {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .papilles-menu-commencer {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .papilles-menu-continuer {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .papilles-menu-terminer {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .palette-menu {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 
   .menu {
@@ -499,14 +481,12 @@ a:link {
 .next__proche {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   padding-left: 30px;
   font-size: 40px;
 }
 .next__points {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -551,24 +531,21 @@ a:link {
   }
 }
 .foot {
-  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 25px 0px 0px 0px;
+  height: 100px;
   position: fixed;
   /*avec la position: fixed, le footer sera visible même au scrolling*/
-  left: 0;
   bottom: 0;
   color: #ffc107;
   background: #289169;
   font-family: "Montserrat", sans-serif;
 }
-.foot__flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /*ci-dessous le paramètrage du tremblement des éléments du footer*/
-}
-.foot__flex:hover {
+.foot__gauche:hover {
+  /*ci-dessous la mixin du tremblement des éléments du footer*/
   animation: shake 2s;
   animation-iteration-count: infinite;
 }
@@ -607,14 +584,49 @@ a:link {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-.foot__flex__gauche {
-  margin-left: 20px;
+.foot__droite:hover {
+  /*ci-dessous la mixin du tremblement des éléments du footer*/
+  animation: shake 2s;
+  animation-iteration-count: infinite;
 }
-.foot__flex__droite {
-  margin-right: 20px;
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
-.foot__flex__gauche a, .foot__flex__droite a {
+a .foot__gauche, a .foot__droite {
+  margin: 0.3em 1.5em;
   text-decoration: none;
   color: #ffc107;
 }
@@ -625,12 +637,12 @@ a:link {
 }
 
 .enchantee {
+  text-align: center;
   font-family: "Devonshire", sans-serif;
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  align-items: center;
 }
 .enchantee__titre {
   color: #5e1d14;
@@ -676,16 +688,11 @@ a:link {
 }
 
 .note_bas {
-  display: flex;
+  text-align: center;
   padding-top: 50px;
 }
-.note_bas__cle {
-  margin-left: auto;
-  padding-top: 45px;
-  padding-right: 20px;
-}
-.note_bas__titre {
-  margin-right: auto;
+
+.titre {
   color: #5e1d14;
   font-family: "Devonshire", sans-serif;
   font-size: 35px;
@@ -702,8 +709,6 @@ a:link {
   padding-bottom: 60px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  align-items: center;
 }
 .francaise_main__titre {
   font-family: "Redressed", sans-serif;
@@ -810,8 +815,6 @@ a:link {
   padding-bottom: 60px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  align-items: center;
 }
 .palette_main__titre {
   background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
@@ -864,8 +867,6 @@ a:link {
   padding-bottom: 60px;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  align-items: center;
 }
 .papilles_main__titre {
   background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
