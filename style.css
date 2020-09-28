@@ -11,9 +11,13 @@
 ==================================================*/
 /*ci-dessous le paramètrage du tremblement des éléments du footer*/
 * {
-  /*margin: 0 auto;*/
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body, h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .header__logo-colors {
@@ -35,7 +39,6 @@ footer {
 }
 
 .header {
-  margin: -50px -10px 50px -20px;
   line-height: 100px;
 }
 .header__logo-colors {
@@ -626,7 +629,7 @@ a:link {
 }
 
 a .foot__gauche, a .foot__droite {
-  margin: 0.3em 1.5em;
+  margin: 0.5em 1em;
   text-decoration: none;
   color: #ffc107;
 }
