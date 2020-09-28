@@ -1,13 +1,9 @@
 .header {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     line-height: 100px;
-    margin-top: -50px;
     &__logo-colors {
         padding: 20px;
         text-align: center;
-        flex: 1 auto;
         @include logo-colors;
     }
 }

@@ -6,6 +6,7 @@
 .enchantee {
     font-family: $font_family_2;
     padding-top: 30px;
+    padding-bottom: 30px;
     @include flex;
     &__titre {
         @include note_titre_display;
