@@ -13,6 +13,7 @@
 * {
   padding: 0;
   box-sizing: border-box;
+  line-height: 1em;
 }
 
 html, body, h1 {
@@ -68,24 +69,19 @@ footer {
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
-.article_container_menu {
-  padding-bottom: 60px;
-}
-
 .section_container_menu {
   padding-bottom: 0.5em;
 }
 
 .deco_bar {
   display: flex;
-  padding: 1.5em 0 1.5em 0;
+  padding: 0px 50px;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  padding-top: 5px;
 }
 .menu__texte {
   margin-left: 50px;
