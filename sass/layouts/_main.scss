@@ -14,14 +14,13 @@
 	box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 .section_container_menu {
-    padding-bottom: .5em;
+    padding-bottom: 1em;
     line-height: .3em;
 }
 .deco_bar {
     display: flex;
     padding: 0px 50px;
     justify-content: space-between;
-    align-items: center;
 }
 .menu {
     display: flex;
@@ -40,3 +39,13 @@
 .space {
     padding-top: 10px;
 }
+.bottom {
+    margin-bottom: 30px;
+}
+.large {
+    font-size: 25px;
+}
+/*.heading-papilles {
+    font-size: 20px;
+    text-decoration: underline;
+}*/

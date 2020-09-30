@@ -3,9 +3,7 @@
 }
 .papilles_main {
     font-family: $font_family_6;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @include flex;
+    padding-top: 50px;
     &__titre {
         @include papilles_titre_display;
         font-size: 4em;
@@ -15,7 +13,6 @@
     @include fonts_menu;
     &__titre {
         position: relative;
-        padding: 30px;
     &:after {
         @include underline;
         background: #3f49b5;
@@ -31,7 +28,6 @@
     @include fonts_menu;
     &__titre {
         position: relative;
-        padding: 30px;
     &:after {
         @include underline;
         background: #4c77a8;
@@ -47,7 +43,6 @@
     @include fonts_menu;
     &__titre {
         position: relative;
-        padding: 30px;
     &:after {
         @include underline;
         background: #86a6d1;
@@ -61,4 +56,5 @@
 }
 .font3 {
     font-family: $font_family_7;
+    font-size: 1.4em;
 }

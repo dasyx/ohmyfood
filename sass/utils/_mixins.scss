@@ -114,11 +114,6 @@
     font-weight: $fw_low;
     text-align: center;
 }
-
-@mixin flex {
-    /*display: flex;*/
-    flex-flow: column wrap;
-}
 @mixin underline {
     content: '';
     position: absolute;

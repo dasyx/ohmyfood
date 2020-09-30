@@ -5,7 +5,6 @@
 .francaise_main {
     padding-top: 60px;
     padding-bottom: 60px;
-    @include flex;
     &__titre {
         @include chic_titre_display;
     }
@@ -72,4 +71,5 @@
 }
 .gradient3 {
     color: #8b54c7;
+    padding-bottom: 50px;
 }

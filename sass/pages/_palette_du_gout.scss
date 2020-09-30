@@ -2,7 +2,6 @@
 .palette_main {
     padding-top: 30px;
     padding-bottom: 30px;
-    @include flex;
     &__titre {
         @include palette_titre_display;
         font-size: 4em;
@@ -27,8 +26,5 @@
 }
 .font4 {
     font-family: $font_family_7;
-    font-size: 20px;
-}
-.large {
-    font-size: 25px;
+    font-size: 1.4em;
 }

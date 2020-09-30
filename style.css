@@ -34,10 +34,6 @@ footer {
   font-size: 22px;
 }
 
-.texte, .prix {
-  font-size: 24px;
-}
-
 .header__logo-colors {
   padding: 20px;
   text-align: center;
@@ -64,7 +60,7 @@ footer {
 }
 
 .section_container_menu {
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   line-height: 0.3em;
 }
 
@@ -72,7 +68,6 @@ footer {
   display: flex;
   padding: 0px 50px;
   justify-content: space-between;
-  align-items: center;
 }
 
 .menu {
@@ -95,6 +90,18 @@ footer {
   padding-top: 10px;
 }
 
+.bottom {
+  margin-bottom: 30px;
+}
+
+.large {
+  font-size: 25px;
+}
+
+/*.heading-papilles {
+    font-size: 20px;
+    text-decoration: underline;
+}*/
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
 ===================================================================*/
 .zoom-hover {
@@ -452,11 +459,6 @@ a:link {
     font-size: 28px;
     padding-bottom: 10px;
   }
-
-  /*.heading-papilles {
-      font-size: 20px;
-      text-decoration: underline;
-  }*/
 }
 /*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
 ==============================================================*/
@@ -635,8 +637,6 @@ a .foot__gauche, a .foot__droite {
   font-family: "Devonshire", sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
-  /*display: flex;*/
-  flex-flow: column wrap;
 }
 .enchantee__titre {
   color: #5e1d14;
@@ -683,7 +683,6 @@ a .foot__gauche, a .foot__droite {
 
 .note_bas {
   text-align: center;
-  padding-top: 50px;
 }
 
 .titre {
@@ -701,8 +700,6 @@ a .foot__gauche, a .foot__droite {
 .francaise_main {
   padding-top: 60px;
   padding-bottom: 60px;
-  /*display: flex;*/
-  flex-flow: column wrap;
 }
 .francaise_main__titre {
   font-family: "Redressed", sans-serif;
@@ -802,13 +799,12 @@ a .foot__gauche, a .foot__droite {
 
 .gradient3 {
   color: #8b54c7;
+  padding-bottom: 50px;
 }
 
 .palette_main {
   padding-top: 30px;
   padding-bottom: 30px;
-  /*display: flex;*/
-  flex-flow: column wrap;
 }
 .palette_main__titre {
   background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
@@ -844,11 +840,7 @@ a .foot__gauche, a .foot__droite {
 
 .font4 {
   font-family: "Caveat", sans-serif;
-  font-size: 20px;
-}
-
-.large {
-  font-size: 25px;
+  font-size: 1.4em;
 }
 
 .pap {
@@ -857,10 +849,7 @@ a .foot__gauche, a .foot__droite {
 
 .papilles_main {
   font-family: "Alex Brush", sans-serif;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /*display: flex;*/
-  flex-flow: column wrap;
+  padding-top: 50px;
 }
 .papilles_main__titre {
   background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
@@ -877,7 +866,6 @@ a .foot__gauche, a .foot__droite {
 }
 .papilles-menu-commencer__titre {
   position: relative;
-  padding: 30px;
 }
 .papilles-menu-commencer__titre:after {
   content: "";
@@ -902,7 +890,6 @@ a .foot__gauche, a .foot__droite {
 }
 .papilles-menu-continuer__titre {
   position: relative;
-  padding: 30px;
 }
 .papilles-menu-continuer__titre:after {
   content: "";
@@ -927,7 +914,6 @@ a .foot__gauche, a .foot__droite {
 }
 .papilles-menu-terminer__titre {
   position: relative;
-  padding: 30px;
 }
 .papilles-menu-terminer__titre:after {
   content: "";
@@ -948,6 +934,7 @@ a .foot__gauche, a .foot__droite {
 
 .font3 {
   font-family: "Caveat", sans-serif;
+  font-size: 1.4em;
 }
 
 /*# sourceMappingURL=style.css.map */
