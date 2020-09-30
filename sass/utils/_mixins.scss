@@ -116,7 +116,7 @@
 }
 
 @mixin flex {
-    display: flex;
+    /*display: flex;*/
     flex-flow: column wrap;
 }
 @mixin underline {

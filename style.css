@@ -13,7 +13,6 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  line-height: 1em;
 }
 
 html, body, h1 {
@@ -39,9 +38,6 @@ footer {
   font-size: 24px;
 }
 
-.header {
-  line-height: 100px;
-}
 .header__logo-colors {
   padding: 20px;
   text-align: center;
@@ -54,8 +50,6 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
   margin-top: 80px;
 }
 
@@ -71,6 +65,7 @@ footer {
 
 .section_container_menu {
   padding-bottom: 0.5em;
+  line-height: 0.3em;
 }
 
 .deco_bar {
@@ -92,12 +87,12 @@ footer {
 }
 
 .menu_bas {
-  line-height: 13px;
+  line-height: 1em;
   margin-left: 50px;
 }
 
 .space {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
@@ -640,7 +635,7 @@ a .foot__gauche, a .foot__droite {
   font-family: "Devonshire", sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
-  display: flex;
+  /*display: flex;*/
   flex-flow: column wrap;
 }
 .enchantee__titre {
@@ -706,7 +701,7 @@ a .foot__gauche, a .foot__droite {
 .francaise_main {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
+  /*display: flex;*/
   flex-flow: column wrap;
 }
 .francaise_main__titre {
@@ -810,9 +805,9 @@ a .foot__gauche, a .foot__droite {
 }
 
 .palette_main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*display: flex;*/
   flex-flow: column wrap;
 }
 .palette_main__titre {
@@ -864,7 +859,7 @@ a .foot__gauche, a .foot__droite {
   font-family: "Alex Brush", sans-serif;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
+  /*display: flex;*/
   flex-flow: column wrap;
 }
 .papilles_main__titre {

@@ -1,7 +1,7 @@
 
 .palette_main {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     @include flex;
     &__titre {
         @include palette_titre_display;

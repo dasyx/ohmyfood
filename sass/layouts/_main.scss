@@ -2,8 +2,6 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-content: center;
-	align-items: center;
 	margin-top: 80px;
 }
 .main_contain {
@@ -17,6 +15,7 @@
 }
 .section_container_menu {
     padding-bottom: .5em;
+    line-height: .3em;
 }
 .deco_bar {
     display: flex;
@@ -35,9 +34,9 @@
     }
 }
 .menu_bas {
-    line-height: 13px;
+    line-height: 1em;
     margin-left: 50px;
 }
 .space {
-    padding-top: 15px;
+    padding-top: 10px;
 }
