@@ -4,7 +4,7 @@
 .next {
 	display: flex;
     align-items: center;
-	width: 850px;
+	width: 35%;
 	height: 80px;
 	border-radius: 12px;
 	margin-top: 100px;
@@ -13,7 +13,7 @@
 	&__proche {
 		@include auto_center;
 		padding-left: 30px;
-		font-size: 40px;
+		font-size: 30px;
 	}
 	&__points {
 		@include auto_center;
@@ -22,15 +22,20 @@
 	}
 	@media screen and (min-width: 320px) and (max-width: 425px) {
 		.next {
+			width: 300px;
 			&__proche {
-				font-size: 20px;
+				font-size: 15px;
+			}
+			&__points {
+				font-size: 10px;
 			}
 		}
 	}
 	@media screen and (min-width: 426px) and (max-width: 1024px) {
 		.next {
+			width: 50%;
 			&__proche {
-				font-size: 30px;
+				font-size: 25px;
 			}
 		}
 	}
