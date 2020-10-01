@@ -27,3 +27,8 @@ a .foot__gauche, a .foot__droite {
     text-decoration: none;
     color: $color_1;
 }
+@media screen and (max-width: 450px) {
+    .foot {
+        flex-direction: column;
+    }
+}
