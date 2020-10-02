@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-html, body, h1 {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -131,7 +131,6 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
@@ -198,7 +197,6 @@ footer {
   font-family: "Redressed", sans-serif;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
@@ -251,7 +249,7 @@ footer {
 .chic__menu {
   margin-top: 20px;
   color: #6d5200;
-  font-family: "Abril FatFace", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 0.1em;
@@ -263,7 +261,6 @@ footer {
   font-family: "Alex Brush", sans-serif;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
@@ -325,7 +322,6 @@ footer {
   font-family: "Kaushan Script", sans-serif;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
@@ -389,52 +385,73 @@ a:link {
 
 /*MEDIA QUERIES
 ==============================================================================*/
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .barre {
     display: none;
   }
-
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .note-menu {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
   .note-menu__titre {
     text-decoration: underline;
   }
 
+  .section_container_menu {
+    line-height: 1em;
+  }
+
   .francaise-menu-appetit {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .francaise-menu-plaisir {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .francaise-menu-gourmand {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .papilles-menu-commencer {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .papilles-menu-continuer {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .papilles-menu-terminer {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .palette-menu {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-weight: 600;
   }
 
   .menu {
@@ -453,6 +470,7 @@ a:link {
   .menu_bas {
     margin-left: auto;
     text-align: center;
+    line-height: 1.6em;
   }
 
   #small {
@@ -465,7 +483,7 @@ a:link {
 .next {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 80px;
   border-radius: 12px;
   margin-top: 100px;
@@ -477,12 +495,16 @@ a:link {
 .next__proche {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-weight: 600;
   padding-left: 20px;
   font-size: 30px;
 }
 .next__points {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  font-weight: 600;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -496,21 +518,20 @@ a:link {
     padding-left: 0px;
   }
   .next__points {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
   .next {
-    width: 50%;
+    width: 60%;
   }
   .next__proche {
-    height: 60px;
-    font-size: 16px;
+    font-size: 20px;
     padding-right: 10px;
     padding-left: 10px;
   }
   .next__points {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .dot1 {
@@ -734,6 +755,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-appetit {
   font-size: 20px;
   font-weight: 100;
+  text-align: center;
 }
 .francaise-menu-appetit__titre {
   position: relative;
@@ -759,6 +781,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-plaisir {
   font-size: 20px;
   font-weight: 100;
+  text-align: center;
 }
 .francaise-menu-plaisir__titre {
   position: relative;
@@ -784,6 +807,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-gourmand {
   font-size: 20px;
   font-weight: 100;
+  text-align: center;
 }
 .francaise-menu-gourmand__titre {
   position: relative;
@@ -804,10 +828,6 @@ a .foot__gauche, a .foot__droite {
   width: 100%;
   left: 0;
   background: #8b54c7;
-}
-
-.font2 {
-  font-family: "Abril FatFace", sans-serif;
 }
 
 .gradient1 {

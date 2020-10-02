@@ -81,16 +81,20 @@ a:link {
 
 /*MEDIA QUERIES
 ==============================================================================*/
-
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .barre {
         display: none;
     }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     .note-menu {
         @include auto_center;
         &__titre {
             text-decoration: underline;
         }
+    }
+    .section_container_menu {
+        line-height: 1em;
     }
     .francaise-menu-appetit {
         @include auto_center;
@@ -128,6 +132,7 @@ a:link {
     .menu_bas {
         margin-left: auto;
         text-align: center;
+        line-height: 1.6em;
     }
     #small {
         font-size: 28px;

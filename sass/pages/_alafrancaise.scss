@@ -12,6 +12,7 @@
 .francaise-menu-appetit {
     font-size: 20px;
     font-weight: 100;
+    text-align: center;
     &__titre {
         position: relative;
         color: #c67412ff;
@@ -29,6 +30,7 @@
 .francaise-menu-plaisir {
     font-size: 20px;
     font-weight: 100;
+    text-align: center;
     &__titre {
         position: relative;
         color: #a56799ff;
@@ -46,6 +48,7 @@
 .francaise-menu-gourmand {
     font-size: 20px;
     font-weight: 100;
+    text-align: center;
     &__titre {
         position: relative;
         color: #8b54c7;
@@ -61,7 +64,6 @@
     }
 }
 .font2{
-    font-family: $font_family_5;
 }
 .gradient1 {
     color: #c67412ff;

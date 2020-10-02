@@ -4,7 +4,7 @@
 .next {
 	display: flex;
     align-items: center;
-	width: 50%;
+	width: 40%;
 	height: 80px;
 	border-radius: 12px;
 	margin-top: 100px;
@@ -29,21 +29,20 @@
 			padding-left: 0px;
 		}
 		&__points {
-			font-size: 10px;
+			font-size: 8px;
 		}
 	}
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
 	.next {
-		width: 50%;
+		width: 60%;
 		&__proche {
-			height: 60px;
-			font-size: 16px;
+			font-size: 20px;
 			padding-right: 10px;
 			padding-left: 10px;
 		}
 		&__points {
-			font-size: 8px;
+			font-size: 10px;
 		}
 	}
 }
