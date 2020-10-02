@@ -60,8 +60,7 @@ footer {
 }
 
 .section_container_menu {
-  padding-bottom: 1em;
-  line-height: 0.3em;
+  /* padding-bottom: 1em;*/
 }
 
 .deco_bar {
@@ -72,17 +71,19 @@ footer {
 
 .menu {
   display: flex;
+  line-height: 0.1em;
+  justify-items: flex-start;
 }
 .menu__texte {
-  margin-left: 50px;
+  margin-left: 60px;
   flex: 1;
 }
 .menu__prix {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .menu_bas {
-  line-height: 1em;
+  line-height: 1.2em;
   margin-left: 50px;
 }
 
@@ -91,10 +92,12 @@ footer {
 }
 
 .bottom {
+  /*Un espacement vertical en bas de page pour le menu "papilles" et "palette"*/
   margin-bottom: 30px;
 }
 
 .large {
+  /*Travail sur la font du menu "palette"*/
   font-size: 25px;
 }
 
@@ -102,6 +105,62 @@ footer {
     font-size: 20px;
     text-decoration: underline;
 }*/
+/*MEDIA QUERIES
+==============================================================================*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .barre {
+    /*Les décorations autour du nom des menus ne s'afficheront pas*/
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .note-menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .note-menu__titre {
+    font-size: 25px;
+  }
+
+  .francaise-menu-appetit, .francaise-menu-plaisir, .francaise-menu-gourmand {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .papilles-menu-commencer, .papilles-menu-continuer, .papilles-menu-terminer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .palette-menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .menu {
+    display: block;
+    line-height: 1em;
+  }
+  .menu__texte {
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .menu__prix {
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .menu_bas {
+    margin-left: auto;
+    text-align: center;
+    line-height: 1.3em;
+  }
+}
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
 ===================================================================*/
 .zoom-hover {
@@ -175,7 +234,7 @@ footer {
 .note__titre {
   color: #5e1d14;
   font-family: "Devonshire", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
 }
 .note__menu {
@@ -186,7 +245,7 @@ footer {
 }
 
 .cle {
-  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fa6155, #fb6d59, #fb785e, #fb8363, #fb8e68, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px;
@@ -240,7 +299,7 @@ footer {
 }
 .chic__titre {
   font-family: "Redressed", sans-serif;
-  background: linear-gradient(to right, #c67412ff, #e6b376, #cc8a78, #c57d88, #ca7498, #ce6ba8, #c367ad, #b863b2, #ad60b8, #a15cbd, #9658c2, #8b54c7);
+  background: linear-gradient(to right, #c28a46, #e6b376, #cc8a78, #ce6ba8, #c367ad, #8b54c7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -250,7 +309,7 @@ footer {
   margin-top: 20px;
   color: #6d5200;
   font-family: "Abril Fatface", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
   letter-spacing: 0.1em;
   text-align: center;
@@ -303,7 +362,7 @@ footer {
   }
 }
 .papilles__titre {
-  background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
+  background: linear-gradient(to right, #3f49b5, #4252b2, #7396c3, #7c9eca, #86a6d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -313,7 +372,7 @@ footer {
   margin-top: 20px;
   color: #6a8ec3;
   font-family: "Caveat", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
   text-align: center;
 }
@@ -364,7 +423,7 @@ footer {
   }
 }
 .palette__titre {
-  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
+  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #97df89, #a9eb8f, #a4d385);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -374,7 +433,7 @@ footer {
   margin-top: 20px;
   color: #5fbb69;
   font-family: "Caveat", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
   text-align: center;
 }
@@ -383,101 +442,6 @@ a:link {
   text-decoration: none;
 }
 
-/*MEDIA QUERIES
-==============================================================================*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .barre {
-    display: none;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 1024px) {
-  .note-menu {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-  .note-menu__titre {
-    text-decoration: underline;
-  }
-
-  .section_container_menu {
-    line-height: 1em;
-  }
-
-  .francaise-menu-appetit {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .francaise-menu-plaisir {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .francaise-menu-gourmand {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .papilles-menu-commencer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .papilles-menu-continuer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .papilles-menu-terminer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .palette-menu {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .menu {
-    display: block;
-  }
-  .menu__texte {
-    margin-left: auto;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  .menu__prix {
-    margin-left: 60px;
-    text-align: center;
-  }
-
-  .menu_bas {
-    margin-left: auto;
-    text-align: center;
-    line-height: 1.6em;
-  }
-
-  #small {
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-}
 /*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
 ==============================================================*/
 .next {
@@ -496,7 +460,6 @@ a:link {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-weight: 600;
   padding-left: 20px;
   font-size: 30px;
 }
@@ -504,7 +467,6 @@ a:link {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-weight: 600;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -683,7 +645,7 @@ a .foot__gauche, a .foot__droite {
 .enchantee__titre {
   color: #5e1d14;
   font-family: "Devonshire", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
 }
 
@@ -717,7 +679,7 @@ a .foot__gauche, a .foot__droite {
 }
 
 .key {
-  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fa6155, #fb6d59, #fb785e, #fb8363, #fb8e68, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 38px;
@@ -736,7 +698,7 @@ a .foot__gauche, a .foot__droite {
 
 .fr {
   background-color: #fce4;
-  color: #5e1d14;
+  /*color: echantenote_color($color_3);*/
 }
 
 .francaise_main {
@@ -745,7 +707,7 @@ a .foot__gauche, a .foot__droite {
 }
 .francaise_main__titre {
   font-family: "Redressed", sans-serif;
-  background: linear-gradient(to right, #c67412ff, #e6b376, #cc8a78, #c57d88, #ca7498, #ce6ba8, #c367ad, #b863b2, #ad60b8, #a15cbd, #9658c2, #8b54c7);
+  background: linear-gradient(to right, #c28a46, #e6b376, #cc8a78, #ce6ba8, #c367ad, #8b54c7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -760,6 +722,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-appetit__titre {
   position: relative;
   color: #c67412ff;
+  font-size: 21px;
 }
 .francaise-menu-appetit__titre:after {
   content: "";
@@ -786,6 +749,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-plaisir__titre {
   position: relative;
   color: #a56799ff;
+  font-size: 21px;
 }
 .francaise-menu-plaisir__titre:after {
   content: "";
@@ -812,6 +776,7 @@ a .foot__gauche, a .foot__droite {
 .francaise-menu-gourmand__titre {
   position: relative;
   color: #8b54c7;
+  font-size: 21px;
 }
 .francaise-menu-gourmand__titre:after {
   content: "";
@@ -843,12 +808,8 @@ a .foot__gauche, a .foot__droite {
   padding-bottom: 50px;
 }
 
-.palette_main {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .palette_main__titre {
-  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #66c178, #6dc688, #74cc97, #82d599, #90dd9b, #9ee69d, #97df89, #a9eb8f, #a4d385);
+  background: linear-gradient(to right, #51b04a, #58b659, #5fbb69, #97df89, #a9eb8f, #a4d385);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -890,10 +851,9 @@ a .foot__gauche, a .foot__droite {
 
 .papilles_main {
   font-family: "Alex Brush", sans-serif;
-  padding-top: 50px;
 }
 .papilles_main__titre {
-  background: linear-gradient(to right, #3f49b5, #4252b2, #445bb0, #4765ad, #496eab, #4c77a8, #567faf, #5f87b6, #698fbd, #7396c3, #7c9eca, #86a6d1);
+  background: linear-gradient(to right, #3f49b5, #4252b2, #7396c3, #7c9eca, #86a6d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
@@ -902,7 +862,7 @@ a .foot__gauche, a .foot__droite {
 }
 
 .papilles-menu-commencer {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 100;
 }
 .papilles-menu-commencer__titre {
@@ -926,7 +886,7 @@ a .foot__gauche, a .foot__droite {
 }
 
 .papilles-menu-continuer {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 100;
 }
 .papilles-menu-continuer__titre {
@@ -950,7 +910,7 @@ a .foot__gauche, a .foot__droite {
 }
 
 .papilles-menu-terminer {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 100;
 }
 .papilles-menu-terminer__titre {

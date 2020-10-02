@@ -3,7 +3,6 @@
 }
 .papilles_main {
     font-family: $font_family_6;
-    padding-top: 50px;
     &__titre {
         @include papilles_titre_display;
         font-size: 4em;

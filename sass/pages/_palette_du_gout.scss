@@ -1,7 +1,5 @@
 
 .palette_main {
-    padding-top: 30px;
-    padding-bottom: 30px;
     &__titre {
         @include palette_titre_display;
         font-size: 4em;

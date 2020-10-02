@@ -1,6 +1,6 @@
 .fr {
     background-color: $background_color_3;
-    color: echantenote_color($color_3);
+    /*color: echantenote_color($color_3);*/
 }
 .francaise_main {
     padding-top: 60px;
@@ -16,6 +16,7 @@
     &__titre {
         position: relative;
         color: #c67412ff;
+        font-size: 21px;
     &:after {
         @include underline;
         background: #c67412ff;
@@ -34,6 +35,7 @@
     &__titre {
         position: relative;
         color: #a56799ff;
+        font-size: 21px;
     &:after {
         @include underline;
         background: #a56799ff;
@@ -52,6 +54,7 @@
     &__titre {
         position: relative;
         color: #8b54c7;
+        font-size: 21px;
     &:after {
         @include underline;
         background: #8b54c7;
