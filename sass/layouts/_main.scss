@@ -14,17 +14,17 @@
 	box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 .section_container_menu {
-   /* padding-bottom: 1em;*/
+    /*padding-bottom: 1em;*/
 }
 .deco_bar {
     display: flex;
     padding: 0px 50px;
+    line-height: .4em;
     justify-content: space-between;
 }
 .menu {
     display: flex;
     line-height: .1em;
-    justify-items: flex-start;
     &__texte {
         margin-left: 60px;
         flex: 1;
@@ -34,8 +34,8 @@
     }
 }
 .menu_bas {
-    line-height: 1.2em;
-    margin-left: 50px;
+    margin-left: 60px;
+    line-height: 1em;
 }
 .space {
     padding-top: 10px;

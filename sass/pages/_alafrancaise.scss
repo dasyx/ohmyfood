@@ -3,8 +3,8 @@
     /*color: echantenote_color($color_3);*/
 }
 .francaise_main {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     &__titre {
         @include chic_titre_display;
     }
@@ -66,15 +66,16 @@
         }
     }
 }
-.font2{
-}
 .gradient1 {
     color: #c67412ff;
+    line-height: .4em;
 }
 .gradient2 {
     color: #a56799ff;
+    line-height: .4em;
 }
 .gradient3 {
     color: #8b54c7;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
+    line-height: 1em;
 }

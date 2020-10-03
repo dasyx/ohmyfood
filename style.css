@@ -11,13 +11,8 @@
 ==================================================*/
 /*ci-dessous le paramètrage du tremblement des éléments du footer*/
 * {
-  padding: 0;
+  /*margin: 0 auto;*/
   box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
 }
 
 .header__logo-colors {
@@ -60,19 +55,19 @@ footer {
 }
 
 .section_container_menu {
-  /* padding-bottom: 1em;*/
+  /*padding-bottom: 1em;*/
 }
 
 .deco_bar {
   display: flex;
   padding: 0px 50px;
+  line-height: 0.4em;
   justify-content: space-between;
 }
 
 .menu {
   display: flex;
   line-height: 0.1em;
-  justify-items: flex-start;
 }
 .menu__texte {
   margin-left: 60px;
@@ -83,8 +78,8 @@ footer {
 }
 
 .menu_bas {
-  line-height: 1.2em;
-  margin-left: 50px;
+  margin-left: 60px;
+  line-height: 1em;
 }
 
 .space {
@@ -528,8 +523,8 @@ a:link {
 .foot {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100px;
   position: fixed;
@@ -620,8 +615,8 @@ a:link {
   }
 }
 
-a .foot__gauche, a .foot__droite {
-  margin: 0.5em 1em;
+.foot__gauche, .foot__droite {
+  margin: 0.3em 1.5em;
   text-decoration: none;
   color: #ffc107;
 }
@@ -629,6 +624,10 @@ a .foot__gauche, a .foot__droite {
 @media screen and (max-width: 450px) {
   .foot {
     flex-direction: column;
+    padding: 20px;
+  }
+  .foot__gauche {
+    margin-bottom: 10px;
   }
 }
 .ench {
@@ -687,6 +686,7 @@ a .foot__gauche, a .foot__droite {
 
 .note_bas {
   text-align: center;
+  margin: 30px;
 }
 
 .titre {
@@ -702,8 +702,8 @@ a .foot__gauche, a .foot__droite {
 }
 
 .francaise_main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .francaise_main__titre {
   font-family: "Redressed", sans-serif;
@@ -797,15 +797,18 @@ a .foot__gauche, a .foot__droite {
 
 .gradient1 {
   color: #c67412ff;
+  line-height: 0.4em;
 }
 
 .gradient2 {
   color: #a56799ff;
+  line-height: 0.4em;
 }
 
 .gradient3 {
   color: #8b54c7;
-  padding-bottom: 50px;
+  margin-bottom: 30px;
+  line-height: 1em;
 }
 
 .palette_main__titre {
@@ -814,7 +817,8 @@ a .foot__gauche, a .foot__droite {
   -webkit-text-fill-color: transparent;
   font-size: 35px;
   text-align: center;
-  font-size: 4em;
+  margin: 30px 0px;
+  font-size: 3em;
   font-family: "Kaushan Script", sans-serif;
 }
 
@@ -858,7 +862,8 @@ a .foot__gauche, a .foot__droite {
   -webkit-text-fill-color: transparent;
   font-size: 35px;
   text-align: center;
-  font-size: 4em;
+  margin-bottom: 20px;
+  font-size: 3em;
 }
 
 .papilles-menu-commencer {
@@ -936,6 +941,7 @@ a .foot__gauche, a .foot__droite {
 .font3 {
   font-family: "Caveat", sans-serif;
   font-size: 1.4em;
+  line-height: 0.1em;
 }
 
 /*# sourceMappingURL=style.css.map */

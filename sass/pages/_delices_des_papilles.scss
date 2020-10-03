@@ -5,7 +5,8 @@
     font-family: $font_family_6;
     &__titre {
         @include papilles_titre_display;
-        font-size: 4em;
+            margin-bottom: 20px;
+            font-size: 3em;
     }
 }
 .papilles-menu-commencer {
@@ -56,4 +57,5 @@
 .font3 {
     font-family: $font_family_7;
     font-size: 1.4em;
+    line-height: .1em;
 }

@@ -2,7 +2,8 @@
 .palette_main {
     &__titre {
         @include palette_titre_display;
-        font-size: 4em;
+        margin: 30px 0px;
+        font-size: 3em;
         font-family: $font_family_8;
     }
 }

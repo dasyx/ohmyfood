@@ -1,8 +1,8 @@
 .foot {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     position: fixed;
@@ -22,13 +22,17 @@
             }
         }
     }
-a .foot__gauche, a .foot__droite {
-    margin: .5em 1em;
+.foot__gauche, .foot__droite {
+    margin: 0.3em 1.5em;
     text-decoration: none;
     color: $color_1;
 }
 @media screen and (max-width: 450px) {
     .foot {
         flex-direction: column;
+        padding: 20px;
+        &__gauche {
+            margin-bottom: 10px;
+        }
     }
 }
