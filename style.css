@@ -11,7 +11,7 @@
 ==================================================*/
 /*ci-dessous le paramètrage du tremblement des éléments du footer*/
 * {
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -55,19 +55,19 @@ footer {
 }
 
 .section_container_menu {
-  /*padding-bottom: 1em;*/
+  padding-bottom: 1em;
 }
 
 .deco_bar {
   display: flex;
   padding: 0px 50px;
-  line-height: 0.4em;
+  line-height: 1em;
   justify-content: space-between;
 }
 
 .menu {
   display: flex;
-  line-height: 0.1em;
+  line-height: 1em;
 }
 .menu__texte {
   margin-left: 60px;
@@ -709,6 +709,7 @@ a:link {
 }
 
 .francaise-menu-appetit {
+  line-height: 1em;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -736,6 +737,7 @@ a:link {
 }
 
 .francaise-menu-plaisir {
+  line-height: 1em;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -763,6 +765,7 @@ a:link {
 }
 
 .francaise-menu-gourmand {
+  line-height: 1em;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -791,12 +794,12 @@ a:link {
 
 .gradient1 {
   color: #c67412ff;
-  line-height: 0.4em;
+  line-height: 1em;
 }
 
 .gradient2 {
   color: #a56799ff;
-  line-height: 0.4em;
+  line-height: 1em;
 }
 
 .gradient3 {
@@ -816,6 +819,9 @@ a:link {
   font-family: "Kaushan Script", sans-serif;
 }
 
+.palette-menu {
+  line-height: 1.2em;
+}
 .palette-menu__titre {
   position: relative;
   padding: 20px;
@@ -935,7 +941,7 @@ a:link {
 .font3 {
   font-family: "Caveat", sans-serif;
   font-size: 1.4em;
-  line-height: 0.1em;
+  line-height: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
