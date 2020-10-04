@@ -161,7 +161,8 @@ footer {
 .zoom-hover {
   overflow: hidden;
   position: relative;
-  margin: 60px;
+  margin-right: 20px;
+  margin-bottom: 60px;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
@@ -188,12 +189,11 @@ footer {
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .note {
-    width: 400px;
-    height: 420px;
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
@@ -204,14 +204,14 @@ footer {
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .note {
-    width: 400px;
-    height: 460px;
+    width: 460px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .note {
-    width: 580px;
-    height: 620px;
+    width: 620px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
@@ -254,12 +254,11 @@ footer {
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .chic {
-    width: 400px;
-    height: 420px;
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
@@ -270,14 +269,14 @@ footer {
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .chic {
-    width: 400px;
-    height: 460px;
+    width: 460px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .chic {
-    width: 580px;
-    height: 620px;
+    width: 620px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
@@ -318,12 +317,11 @@ footer {
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .papilles {
-    width: 400px;
-    height: 420px;
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
@@ -334,14 +332,14 @@ footer {
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .papilles {
-    width: 400px;
-    height: 460px;
+    width: 460px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .papilles {
-    width: 580px;
-    height: 620px;
+    width: 620px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
@@ -379,12 +377,11 @@ footer {
   align-items: center;
   border: 1px #efefef solid;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .palette {
-    width: 400px;
-    height: 420px;
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px) {
@@ -395,14 +392,14 @@ footer {
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .palette {
-    width: 400px;
-    height: 460px;
+    width: 460px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .palette {
-    width: 580px;
-    height: 620px;
+    width: 620px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
@@ -624,10 +621,6 @@ a:link {
 @media screen and (max-width: 450px) {
   .foot {
     flex-direction: column;
-    padding: 20px;
-  }
-  .foot__gauche {
-    margin-bottom: 10px;
   }
 }
 .ench {

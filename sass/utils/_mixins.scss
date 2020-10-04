@@ -7,9 +7,6 @@
     font-size: 22px;
     font-weight: $fw_low;
 }
-@mixin margin_menu {
-    margin: 65px;
-}
 @mixin auto_center {
     margin-left: auto;
     margin-right: auto;
@@ -21,23 +18,22 @@
     align-items: center;
     border: 1px #efefef solid;
     box-shadow: 4px 0px 8px 5px #cdcdcd80;
-    margin-bottom: 60px;
 
     @media screen and (min-width: 320px) and (max-width: 425px) {
-        width: 400px;
-        height: 420px;
+        width: 340px;
+        height: 380px;
     }
     @media screen and (min-width: 426px) and (max-width: 1024px) {
         width: 380px;
         height: 420px;
     }
      @media screen and (min-width: 1025px) and (max-width: 1439px) {
-        width: 400px;
-        height: 460px;
+        width: 460px;
+        height: 520px;
     } 
     @media screen and (min-width: 1440px) and (max-width: 1920px) {
-        width: 580px;
-        height: 620px;
+        width: 620px;
+        height: 660px;
     }
     @media screen and (min-width: 1921px) and (max-width: 2560px){
         width: 740px;
