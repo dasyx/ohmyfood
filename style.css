@@ -161,8 +161,9 @@ footer {
 .zoom-hover {
   overflow: hidden;
   position: relative;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-bottom: 60px;
+  margin-left: 10px;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
