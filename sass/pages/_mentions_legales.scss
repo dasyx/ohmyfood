@@ -1,3 +1,28 @@
 .mentions {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin-top: 50px;
+    font-family: $font_family_1;
+}
+.def {
+    margin-left: 10px;
+    color: $color_1;
+    background-color: $background_color_1;
+}
+.mod {
+    margin-right: 10px;
+    padding-left: 5px;
+}
+.txt {
+    margin-left: 40px;
+    color: $color_1;
+    background-color: $background_color_1;
+}
+.bloc {
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    line-height: 1.6em;
+    box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }

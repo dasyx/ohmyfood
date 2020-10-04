@@ -949,7 +949,36 @@ a:link {
 }
 
 .mentions {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.def {
+  margin-left: 10px;
+  color: #ffc107;
+  background-color: #289169;
+}
+
+.mod {
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.txt {
+  margin-left: 40px;
+  color: #ffc107;
+  background-color: #289169;
+}
+
+.bloc {
+  flex: 1;
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.6em;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
 /*# sourceMappingURL=style.css.map */
