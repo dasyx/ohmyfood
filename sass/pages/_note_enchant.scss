@@ -19,6 +19,7 @@
 .note-menu {
     &__titre {
         position: relative;
+        padding-bottom: 10px;
         color: $color_2;
     &:after {
         @include underline;

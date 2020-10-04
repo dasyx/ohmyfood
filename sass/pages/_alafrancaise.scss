@@ -3,14 +3,14 @@
     /*color: echantenote_color($color_3);*/
 }
 .francaise_main {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     &__titre {
         @include chic_titre_display;
     }
 }
 .francaise-menu-appetit {
-    line-height: 1em;
+    padding-bottom: 10px;
     font-size: 20px;
     font-weight: 100;
     text-align: center;
@@ -30,7 +30,8 @@
     }
 }
 .francaise-menu-plaisir {
-    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     font-weight: 100;
     text-align: center;
@@ -50,7 +51,8 @@
     }
 }
 .francaise-menu-gourmand {
-    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     font-weight: 100;
     text-align: center;
@@ -69,16 +71,19 @@
         }
     }
 }
+.francaise-menu-appetit, .francaise-menu-plaisir, .francaise-menu-gourmand {
+    font-weight: bold;
+}
 .gradient1 {
     color: #c67412ff;
-    line-height: 1em;
+    line-height: 1.8em;
 }
 .gradient2 {
     color: #a56799ff;
-    line-height: 1em;
+    line-height: 1.8em;
 }
 .gradient3 {
     color: #8b54c7;
     margin-bottom: 30px;
-    line-height: 1em;
+    line-height: 2em;
 }

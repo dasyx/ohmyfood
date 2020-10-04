@@ -60,14 +60,14 @@ footer {
 
 .deco_bar {
   display: flex;
-  padding: 0px 50px;
+  padding: 15px 50px;
   line-height: 1em;
   justify-content: space-between;
 }
 
 .menu {
   display: flex;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 .menu__texte {
   margin-left: 60px;
@@ -79,11 +79,7 @@ footer {
 
 .menu_bas {
   margin-left: 60px;
-  line-height: 1em;
-}
-
-.space {
-  padding-top: 10px;
+  line-height: 1.4em;
 }
 
 .bottom {
@@ -128,22 +124,23 @@ footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    color: #3f49b5;
   }
 
   .palette-menu {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    color: #51b04a;
   }
 
   .menu {
     display: block;
-    line-height: 1em;
+    line-height: 1.5em;
   }
   .menu__texte {
     margin-left: auto;
     text-align: center;
-    padding-bottom: 10px;
   }
   .menu__prix {
     margin-left: 60px;
@@ -153,7 +150,7 @@ footer {
   .menu_bas {
     margin-left: auto;
     text-align: center;
-    line-height: 1.3em;
+    line-height: 2.2em;
   }
 }
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
@@ -646,6 +643,7 @@ a:link {
 =============================================================================*/
 .note-menu__titre {
   position: relative;
+  padding-bottom: 10px;
   color: #5e1d14;
 }
 .note-menu__titre:after {
@@ -696,8 +694,8 @@ a:link {
 }
 
 .francaise_main {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .francaise_main__titre {
   font-family: "Redressed", sans-serif;
@@ -709,7 +707,7 @@ a:link {
 }
 
 .francaise-menu-appetit {
-  line-height: 1em;
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -737,7 +735,8 @@ a:link {
 }
 
 .francaise-menu-plaisir {
-  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -765,7 +764,8 @@ a:link {
 }
 
 .francaise-menu-gourmand {
-  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
@@ -792,20 +792,24 @@ a:link {
   background: #8b54c7;
 }
 
+.francaise-menu-appetit, .francaise-menu-plaisir, .francaise-menu-gourmand {
+  font-weight: bold;
+}
+
 .gradient1 {
   color: #c67412ff;
-  line-height: 1em;
+  line-height: 1.8em;
 }
 
 .gradient2 {
   color: #a56799ff;
-  line-height: 1em;
+  line-height: 1.8em;
 }
 
 .gradient3 {
   color: #8b54c7;
   margin-bottom: 30px;
-  line-height: 1em;
+  line-height: 2em;
 }
 
 .palette_main__titre {
@@ -815,7 +819,7 @@ a:link {
   font-size: 35px;
   text-align: center;
   margin: 30px 0px;
-  font-size: 3em;
+  font-size: 2.8em;
   font-family: "Kaushan Script", sans-serif;
 }
 
@@ -824,7 +828,6 @@ a:link {
 }
 .palette-menu__titre {
   position: relative;
-  padding: 20px;
   font-weight: 100;
 }
 .palette-menu__titre:after {
@@ -846,7 +849,7 @@ a:link {
 
 .font4 {
   font-family: "Caveat", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .pap {
@@ -862,6 +865,7 @@ a:link {
   -webkit-text-fill-color: transparent;
   font-size: 35px;
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 3em;
 }
@@ -940,8 +944,12 @@ a:link {
 
 .font3 {
   font-family: "Caveat", sans-serif;
-  font-size: 1.4em;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.mentions {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

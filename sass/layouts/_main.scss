@@ -18,13 +18,13 @@
 }
 .deco_bar {
     display: flex;
-    padding: 0px 50px;
+    padding: 15px 50px;
     line-height: 1em;
     justify-content: space-between;
 }
 .menu {
     display: flex;
-    line-height: 1em;
+    line-height: 1.4em;
     &__texte {
         margin-left: 60px;
         flex: 1;
@@ -35,10 +35,7 @@
 }
 .menu_bas {
     margin-left: 60px;
-    line-height: 1em;
-}
-.space {
-    padding-top: 10px;
+    line-height: 1.4em;
 }
 .bottom {
     /*Un espacement vertical en bas de page pour le menu "papilles" et "palette"*/
@@ -72,17 +69,18 @@
     }
     .papilles-menu-commencer, .papilles-menu-continuer, .papilles-menu-terminer {
         @include auto_center;
+        color: #3f49b5;
     }
     .palette-menu {
         @include auto_center;
+        color: #51b04a;
     }
     .menu {
         display: block;
-        line-height: 1em;
+        line-height: 1.5em;
         &__texte {
             margin-left: auto;
             text-align: center;
-            padding-bottom: 10px;
         }
         &__prix {
             margin-left: 60px;
@@ -92,6 +90,6 @@
     .menu_bas {
         margin-left: auto;
         text-align: center;
-        line-height: 1.3em;
+        line-height: 2.2em;
     }
 }

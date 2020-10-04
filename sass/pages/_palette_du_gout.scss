@@ -3,7 +3,7 @@
     &__titre {
         @include palette_titre_display;
         margin: 30px 0px;
-        font-size: 3em;
+        font-size: 2.8em;
         font-family: $font_family_8;
     }
 }
@@ -11,7 +11,6 @@
     line-height: 1.2em;
     &__titre {
         position: relative;
-        padding: 20px;
         font-weight: 100;
     &:after {
         @include underline;
@@ -26,5 +25,5 @@
 }
 .font4 {
     font-family: $font_family_7;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
