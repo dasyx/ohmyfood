@@ -1,6 +1,5 @@
 .mentions {
     display: flex;
-    flex-direction: column;
     width: 80%;
     margin-top: 50px;
     font-family: $font_family_1;
@@ -20,7 +19,6 @@
     background-color: $background_color_1;
 }
 .bloc {
-    flex: 1;
     margin: 20px;
     padding: 10px;
     line-height: 1.6em;
