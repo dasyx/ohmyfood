@@ -161,7 +161,7 @@ footer {
 .zoom-hover {
   overflow: hidden;
   position: relative;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 60px;
   box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
@@ -216,8 +216,8 @@ footer {
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .note {
-    width: 740px;
-    height: 800px;
+    width: 820px;
+    height: 880px;
   }
 }
 @media screen and (min-width: 2561px) {
@@ -281,8 +281,8 @@ footer {
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .chic {
-    width: 740px;
-    height: 800px;
+    width: 820px;
+    height: 880px;
   }
 }
 @media screen and (min-width: 2561px) {
@@ -344,8 +344,8 @@ footer {
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .papilles {
-    width: 740px;
-    height: 800px;
+    width: 820px;
+    height: 880px;
   }
 }
 @media screen and (min-width: 2561px) {
@@ -404,8 +404,8 @@ footer {
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .palette {
-    width: 740px;
-    height: 800px;
+    width: 820px;
+    height: 880px;
   }
 }
 @media screen and (min-width: 2561px) {
