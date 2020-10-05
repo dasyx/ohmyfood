@@ -1,8 +1,6 @@
-.header {
-    &__logo-colors {
-        padding: 20px;
-        text-align: center;
-        @include logo-colors;
-    }
+.logo-colors {
+    padding: 20px;
+    text-align: center;
+    @include logo-colors;
 }
 

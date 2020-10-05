@@ -5,8 +5,8 @@
     font-family: $font_family_6;
     &__titre {
         @include papilles_titre_display;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             font-size: 3em;
     }
 }
@@ -58,5 +58,5 @@
 .font3 {
     font-family: $font_family_7;
     font-size: 1.5em;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }

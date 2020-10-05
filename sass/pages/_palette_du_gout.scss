@@ -1,4 +1,3 @@
-
 .palette_main {
     &__titre {
         @include palette_titre_display;
@@ -8,7 +7,7 @@
     }
 }
 .palette-menu {
-    line-height: 1.2em;
+    line-height: 1.4em;
     &__titre {
         position: relative;
         font-weight: 100;
