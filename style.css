@@ -92,6 +92,11 @@ footer {
 
 /*MEDIA QUERIES
 ==============================================================================*/
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  header {
+    width: 475px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .barre {
     /*Les décorations autour du nom des menus ne s'afficheront pas*/
