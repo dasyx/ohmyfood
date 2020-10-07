@@ -92,11 +92,6 @@ footer {
 
 /*MEDIA QUERIES
 ==============================================================================*/
-@media screen and (min-width: 320px) and (max-width: 450px) {
-  header {
-    width: 475px;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .barre {
     /*Les décorations autour du nom des menus ne s'afficheront pas*/
@@ -160,6 +155,10 @@ footer {
   .mentions {
     display: block;
     width: 100%;
+  }
+
+  header {
+    text-align: center;
   }
 }
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
@@ -961,10 +960,15 @@ footer {
 
 .mentions {
   display: flex;
-  width: 90%;
+  flex-flow: row wrap;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 100px;
   font-family: "Montserrat", sans-serif;
+}
+
+.article-conteneur {
+  margin: 20px 30px;
 }
 
 .def {

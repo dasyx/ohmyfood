@@ -1,9 +1,13 @@
 .mentions {
     display: flex;
-    width: 90%;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
     font-family: $font_family_1;
+}
+.article-conteneur {
+    margin: 20px 30px;
 }
 .def {
     margin-left: 10px;
