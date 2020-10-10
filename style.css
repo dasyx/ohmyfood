@@ -29,7 +29,13 @@ footer {
   font-size: 22px;
 }
 
+header {
+  display: flex;
+}
+
 .logo-colors {
+  flex: 1 1 auto;
+  width: inherit;
   padding: 20px;
   text-align: center;
   color: #ffc107;
@@ -150,15 +156,6 @@ footer {
     margin-left: auto;
     text-align: center;
     line-height: 2.4em;
-  }
-
-  .mentions {
-    display: block;
-    width: 100%;
-  }
-
-  header {
-    text-align: center;
   }
 }
 /*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
@@ -961,13 +958,20 @@ footer {
 .mentions {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 100px;
   font-family: "Montserrat", sans-serif;
 }
 
 .article-conteneur {
-  margin: 20px 30px;
+  flex: auto;
+  margin: 20px 10px;
+}
+@media screen and (max-width: 425px) {
+  .article-conteneur {
+    font-size: 0.8em;
+  }
 }
 
 .def {

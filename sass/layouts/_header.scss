@@ -1,4 +1,9 @@
+header {
+    display: flex;
+}
 .logo-colors {
+    flex: 1 1 auto;
+    width: inherit;
     padding: 20px;
     text-align: center;
     @include logo-colors;
