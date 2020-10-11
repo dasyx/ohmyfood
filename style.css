@@ -152,7 +152,6 @@ footer {
 .zoom-hover {
   overflow: hidden;
   /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
-  position: relative;
   margin-right: 20px;
   margin-bottom: 60px;
   margin-left: 10px;
@@ -160,7 +159,6 @@ footer {
 }
 
 .zoom-hover .zoom-hover__box {
-  max-width: 100%;
   transition: all 0.8s;
 }
 
@@ -439,16 +437,10 @@ a:link {
   font-family: "Montserrat", sans-serif;
 }
 .next__proche {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   padding-left: 20px;
   font-size: 30px;
 }
 .next__points {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -500,7 +492,7 @@ a:link {
   }
   50% {
     opacity: 0.6;
-    transform: scale(1.4) translateY(-4px);
+    transform: scale(1.2) translateY(-4px);
   }
   100% {
     opacity: 1;
@@ -646,7 +638,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #5e1d14;
@@ -717,7 +708,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #c67412ff;
@@ -746,7 +736,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #a56799ff;
@@ -775,7 +764,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #8b54c7;
@@ -830,7 +818,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #51b04a;
@@ -881,7 +868,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #3f49b5;
@@ -905,7 +891,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #4c77a8;
@@ -929,7 +914,6 @@ footer {
   width: 0;
   height: 3px;
   display: block;
-  right: 0;
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
   background: #86a6d1;

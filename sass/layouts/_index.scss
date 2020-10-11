@@ -3,14 +3,12 @@
 .zoom-hover {
     overflow: hidden;
     /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
-    position: relative;
     margin-right: 20px; 
     margin-bottom: 60px;
     margin-left: 10px;
     box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 .zoom-hover .zoom-hover__box {
-    max-width: 100%;
     transition: all 0.8s;
 }
 .zoom-hover .zoom-hover__box:hover {

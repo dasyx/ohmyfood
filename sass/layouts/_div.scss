@@ -11,12 +11,10 @@
 	margin-bottom: 200px;
 	@include logo-colors;
 	&__proche {
-		@include auto_center;
 		padding-left: 20px;
 		font-size: 30px;
 	}
 	&__points {
-		@include auto_center;
 		padding-top: 10px;
 		font-size: 15px;
 	}
@@ -67,7 +65,7 @@
     }
     50%{
         opacity: 0.6;
-        transform: scale(1.4) translateY(-4px);
+        transform: scale(1.2) translateY(-4px);
     }
     100%{
         opacity: 1; 

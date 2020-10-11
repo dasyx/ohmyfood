@@ -113,9 +113,9 @@
 @mixin underline {
     content: '';
     position: absolute;
-    width: 0; height: 3px;
+    width: 0;
+    height: 3px;
     display: block;
-    right: 0;
     transition: width .2s ease;
     -webkit-transition: width .2s ease;
 }
