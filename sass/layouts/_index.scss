@@ -2,6 +2,7 @@
 ===================================================================*/
 .zoom-hover {
     overflow: hidden;
+    /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
     position: relative;
     margin-right: 20px; 
     margin-bottom: 60px;
@@ -11,13 +12,10 @@
 .zoom-hover .zoom-hover__box {
     max-width: 100%;
     transition: all 0.8s;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 .zoom-hover .zoom-hover__box:hover {
     transform: scale(1.15);
-    transition:transform 0.25s;
+    transition: transform 0.25s;
 }
 /*================================================================*/
 
