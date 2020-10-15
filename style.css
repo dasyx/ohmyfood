@@ -58,9 +58,6 @@ footer {
 
 .deco_bar {
   display: flex;
-  padding: 15px 50px;
-  line-height: 1em;
-  justify-content: space-between;
 }
 
 .menu {
@@ -225,13 +222,6 @@ footer {
   font-family: "Kalam", sans-serif;
   font-size: 50px;
   text-align: center;
-}
-
-.cle {
-  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 50px;
 }
 
 .chic {
@@ -654,13 +644,6 @@ footer {
   font-family: "Kalam", sans-serif;
 }
 
-.key {
-  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 38px;
-}
-
 .note_bas {
   text-align: center;
   margin: 30px;
@@ -671,6 +654,13 @@ footer {
   font-family: "Devonshire", sans-serif;
   font-size: 35px;
   font-weight: 200;
+}
+
+.key {
+  background: linear-gradient(to top right, #fa4b4b, #fa5650, #fb996d, #fba472, #fcb076, #fcbb7b, #fcc680);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
 }
 
 .fr {
@@ -807,6 +797,7 @@ footer {
 
 .palette-menu {
   line-height: 1.4em;
+  font-family: "Caveat", sans-serif;
 }
 .palette-menu__titre {
   position: relative;
@@ -833,7 +824,7 @@ footer {
   font-size: 1.3em;
 }
 
-.head {
+.palette-menu--large {
   font-size: 1.8em;
 }
 
@@ -858,6 +849,7 @@ footer {
 .papilles-menu-commencer {
   font-size: 22px;
   font-weight: 100;
+  font-family: "Caveat", sans-serif;
 }
 .papilles-menu-commencer__titre {
   position: relative;
@@ -881,6 +873,7 @@ footer {
 .papilles-menu-continuer {
   font-size: 22px;
   font-weight: 100;
+  font-family: "Caveat", sans-serif;
 }
 .papilles-menu-continuer__titre {
   position: relative;
@@ -904,6 +897,7 @@ footer {
 .papilles-menu-terminer {
   font-size: 22px;
   font-weight: 100;
+  font-family: "Caveat", sans-serif;
 }
 .papilles-menu-terminer__titre {
   position: relative;

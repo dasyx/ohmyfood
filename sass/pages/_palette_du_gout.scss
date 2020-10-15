@@ -8,6 +8,7 @@
 }
 .palette-menu {
     line-height: 1.4em;
+    font-family: $font_family_7;
     &__titre {
         position: relative;
         font-weight: 100;
@@ -26,6 +27,6 @@
     font-family: $font_family_7;
     font-size: 1.3em;
 }
-.head {
+.palette-menu--large {
     font-size: 1.8em;
 }

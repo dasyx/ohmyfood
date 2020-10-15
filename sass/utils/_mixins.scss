@@ -6,6 +6,7 @@
 @mixin fonts_menu {
     font-size: 22px;
     font-weight: $fw_low;
+    font-family: $font_family_7;
 }
 @mixin auto_center {
     margin-left: auto;

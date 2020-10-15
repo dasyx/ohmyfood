@@ -38,12 +38,6 @@
 .font1{
     font-family: $font_family_3;
 }
-.key {
-    background: $note_background;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 38px;
-}
 .note_bas {
     text-align: center;
     margin: 30px;
@@ -53,4 +47,7 @@
     font-family: $font_family_2;
     font-size: 35px;
     font-weight: 200;
+}
+.key {
+    @include note_cle_display; 
 }

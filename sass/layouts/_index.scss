@@ -29,10 +29,6 @@
         @include note_menu_display;
     }
 }
-.cle {
-    @include note_cle_display; 
-}
-
 .chic {
     background-color: $background_color_3;
     font-family: $font_family_4;
