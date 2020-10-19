@@ -1,22 +1,3 @@
-/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
-===================================================================*/
-.zoom-hover {
-    overflow: hidden;
-    /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
-    margin-right: 20px; 
-    margin-bottom: 60px;
-    margin-left: 10px;
-    box-shadow: 4px 0px 8px 5px #cdcdcd80;
-}
-.zoom-hover .zoom-hover__box {
-    transition: all 0.8s;
-}
-.zoom-hover .zoom-hover__box:hover {
-    transform: scale(1.15);
-    transition: transform 0.25s;
-}
-/*================================================================*/
-
 .note {
     background-color: $background_color_2;
     font-family: $font_family_2;

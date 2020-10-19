@@ -10,26 +10,3 @@ footer {
     bottom: 0;
     @include logo-colors;
 }
-.foot__gauche {
-    &:hover {
-    /*ci-dessous la mixin du tremblement des éléments du footer*/
-        @include shaking;
-    }
-}
-.foot__droite {
-    &:hover {
-    /*ci-dessous la mixin du tremblement des éléments du footer*/
-        @include shaking;
-    }
-}
-
-.foot__gauche, .foot__droite {
-    margin: 0.3em 1.5em;
-    text-decoration: none;
-    color: $color_1;
-}
-@media screen and (max-width: 450px) {
-    footer {
-        flex-direction: column;
-    }
-}

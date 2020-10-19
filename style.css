@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*ci-dessous le paramètrage du tremblement des éléments du footer*/
+/*ci-dessous les mixins en relation avec les animations*/
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -68,6 +68,52 @@ footer {
   line-height: 1.8em;
 }
 
+.next {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 80px;
+  border-radius: 12px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  color: #ffc107;
+  background: #289169;
+  font-family: "Montserrat", sans-serif;
+}
+.next__proche {
+  padding-left: 20px;
+  font-size: 30px;
+}
+.next__points {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .next {
+    width: 80%;
+  }
+  .next__proche {
+    font-size: 16px;
+    padding-left: 0px;
+  }
+  .next__points {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  .next {
+    width: 60%;
+  }
+  .next__proche {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .next__points {
+    font-size: 10px;
+  }
+}
 .bottom {
   /*Un espacement vertical en bas de page pour le menu "papilles" et "palette"*/
   margin-bottom: 30px;
@@ -135,27 +181,6 @@ footer {
     line-height: 2.4em;
   }
 }
-/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
-===================================================================*/
-.zoom-hover {
-  overflow: hidden;
-  /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
-  margin-right: 20px;
-  margin-bottom: 60px;
-  margin-left: 10px;
-  box-shadow: 4px 0px 8px 5px #cdcdcd80;
-}
-
-.zoom-hover .zoom-hover__box {
-  transition: all 0.8s;
-}
-
-.zoom-hover .zoom-hover__box:hover {
-  transform: scale(1.15);
-  transition: transform 0.25s;
-}
-
-/*================================================================*/
 .note {
   background-color: #f8e2df;
   font-family: "Devonshire", sans-serif;
@@ -403,54 +428,45 @@ a:link {
   text-decoration: none;
 }
 
-/*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
-==============================================================*/
-.next {
+footer {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 40%;
-  height: 80px;
-  border-radius: 12px;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  /*avec la position: fixed, le footer sera visible même au scrolling*/
+  bottom: 0;
   color: #ffc107;
   background: #289169;
   font-family: "Montserrat", sans-serif;
 }
-.next__proche {
-  padding-left: 20px;
-  font-size: 30px;
-}
-.next__points {
-  padding-top: 10px;
-  font-size: 15px;
+
+/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+===================================================================*/
+.zoom-hover {
+  overflow: hidden;
+  /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
+  margin-right: 20px;
+  margin-bottom: 60px;
+  margin-left: 10px;
+  box-shadow: 4px 0px 8px 5px #cdcdcd80;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .next {
-    width: 80%;
-  }
-  .next__proche {
-    font-size: 16px;
-    padding-left: 0px;
-  }
-  .next__points {
-    font-size: 8px;
-  }
+.zoom-hover .zoom-hover__box {
+  transition: all 0.8s;
 }
-@media screen and (min-width: 426px) and (max-width: 1024px) {
-  .next {
-    width: 60%;
-  }
-  .next__proche {
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .next__points {
-    font-size: 10px;
-  }
+
+.zoom-hover .zoom-hover__box:hover {
+  transform: scale(1.15);
+  transition: transform 0.25s;
 }
+
+/*FIN DU CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+================================================================*/
+/*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+==============================================================*/
 .dot1 {
   animation: dot_anime 1.2s ease-in-out infinite;
   padding-right: 4px;
@@ -480,21 +496,10 @@ a:link {
     transform: scale(1) translateY(0px);
   }
 }
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  /*avec la position: fixed, le footer sera visible même au scrolling*/
-  bottom: 0;
-  color: #ffc107;
-  background: #289169;
-  font-family: "Montserrat", sans-serif;
-}
-
+/*FIN ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+================================================================*/
+/*ANIMATION DES RUBRIQUES CONTACT ET MENTIONS LEGALES
+======================================================*/
 .foot__gauche:hover {
   /*ci-dessous la mixin du tremblement des éléments du footer*/
   animation: shake 2s;
@@ -588,24 +593,8 @@ footer {
     flex-direction: column;
   }
 }
-.ench {
-  background-color: #f8e2df;
-  color: #5e1d14;
-}
-
-.enchantee {
-  text-align: center;
-  font-family: "Devonshire", sans-serif;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.enchantee__titre {
-  color: #5e1d14;
-  font-family: "Devonshire", sans-serif;
-  font-size: 42px;
-  font-weight: 100;
-}
-
+/*FIN ANIMATION DES RUBRIQUES CONTACT ET MENTIONS LEGALES
+======================================================*/
 /*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
 =============================================================================*/
 .note-menu__titre {
@@ -631,6 +620,24 @@ footer {
 
 /*FIN DE LA SECTION TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
 =============================================================================*/
+.ench {
+  background-color: #f8e2df;
+  color: #5e1d14;
+}
+
+.enchantee {
+  text-align: center;
+  font-family: "Devonshire", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.enchantee__titre {
+  color: #5e1d14;
+  font-family: "Devonshire", sans-serif;
+  font-size: 42px;
+  font-weight: 100;
+}
+
 .font1 {
   font-family: "Kalam", sans-serif;
 }

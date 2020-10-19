@@ -111,16 +111,7 @@
     font-weight: $fw_low;
     text-align: center;
 }
-@mixin underline {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    display: block;
-    transition: width .2s ease;
-    -webkit-transition: width .2s ease;
-}
-/*ci-dessous le paramètrage du tremblement des éléments du footer*/
+/*ci-dessous les mixins en relation avec les animations*/
 @mixin shaking {
     animation: shake 2s;
     animation-iteration-count: infinite;
@@ -137,4 +128,13 @@
         90% { transform: translate(1px, 2px) rotate(0deg); }
         100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
+}
+@mixin underline {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
 }

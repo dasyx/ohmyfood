@@ -1,4 +1,3 @@
-
 .ench {
     background-color: $background_color_2;
     color: echantenote_color($color_2);
@@ -12,29 +11,6 @@
         @include note_titre_display;
     }
 }
-/*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
-=============================================================================*/
-
-.note-menu {
-    &__titre {
-        position: relative;
-        padding-bottom: 10px;
-        color: $color_2;
-    &:after {
-        @include underline;
-        background: $color_2;
-        }
-    &:hover:after {
-        width: 100%;
-        left: 0;
-        background: $color_2;
-        }
-    }
-}
-
-/*FIN DE LA SECTION TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
-=============================================================================*/
-
 .font1{
     font-family: $font_family_3;
 }

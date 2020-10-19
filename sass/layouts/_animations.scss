@@ -1,0 +1,101 @@
+/*CI-DESSOUS LE CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+===================================================================*/
+.zoom-hover {
+    overflow: hidden;
+    /*avec overflow: hidden on empêchera le menu survolé de sortir de son conteneur*/
+    margin-right: 20px; 
+    margin-bottom: 60px;
+    margin-left: 10px;
+    box-shadow: 4px 0px 8px 5px #cdcdcd80;
+}
+.zoom-hover .zoom-hover__box {
+    transition: all 0.8s;
+}
+.zoom-hover .zoom-hover__box:hover {
+    transform: scale(1.15);
+    transition: transform 0.25s;
+}
+/*FIN DU CODE POUR L'EFFET DE ZOOM AU SURVOL DU MENU
+================================================================*/
+
+/*ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+==============================================================*/
+.dot1{
+	animation: dot_anime 1.2s ease-in-out infinite; 
+	padding-right: 4px;
+}
+.dot2{
+	animation: dot_anime 1.2s 0.2s ease-in-out infinite;
+	padding-right: 4px;
+}
+.dot3{
+	animation: dot_anime 1.2s 0.4s ease-in-out infinite;
+	padding-right: 8px;
+}
+
+@keyframes dot_anime {
+    0%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+    50%{
+        opacity: 0.6;
+        transform: scale(1.2) translateY(-4px);
+    }
+    100%{
+        opacity: 1; 
+        transform: scale(1) translateY(0px);
+    }
+}
+/*FIN ANIMATIONS DES POINTS DE SUSPENSION DU TITRE PROCHAINEMENT
+================================================================*/
+
+/*ANIMATION DES RUBRIQUES CONTACT ET MENTIONS LEGALES
+======================================================*/
+.foot__gauche {
+    &:hover {
+    /*ci-dessous la mixin du tremblement des éléments du footer*/
+        @include shaking;
+    }
+}
+.foot__droite {
+    &:hover {
+    /*ci-dessous la mixin du tremblement des éléments du footer*/
+        @include shaking;
+    }
+}
+
+.foot__gauche, .foot__droite {
+    margin: 0.3em 1.5em;
+    text-decoration: none;
+    color: $color_1;
+}
+@media screen and (max-width: 450px) {
+    footer {
+        flex-direction: column;
+    }
+}
+/*FIN ANIMATION DES RUBRIQUES CONTACT ET MENTIONS LEGALES
+======================================================*/
+
+/*CI-DESSOUS TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
+
+.note-menu {
+    &__titre {
+        position: relative;
+        padding-bottom: 10px;
+        color: $color_2;
+    &:after {
+        @include underline;
+        background: $color_2;
+        }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+        background: $color_2;
+        }
+    }
+}
+/*FIN DE LA SECTION TRAVAIL SUR LE SOULIGNAGE AU SURVOL DES CATEGORIES MENUS
+=============================================================================*/
